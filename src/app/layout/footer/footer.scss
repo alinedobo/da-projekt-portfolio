@@ -1,0 +1,48 @@
+/* @use '/public/styles/main.scss'; */
+
+.footer {
+  width: 100%;
+  max-width: 1440px;
+  height: 325px;
+  background: url(/assets/images/Rectangle-5.png);
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 24px 100px;
+}
+
+p {
+  color: white;
+}
+
+#logo {
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: 'Syne';
+}
+
+.links {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border: 1px solid blue;
+
+  p {
+    padding: 10px 5px;
+  }
+}
+
+.external-logos {
+  width: fit-content;
+  display: flex;
+  gap: 42px;
+
+  img {
+    height: 40px;
+    width: 40px;
+  }
+}

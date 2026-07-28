@@ -1,0 +1,26 @@
+@use '../../../../public/styles/main' as main;
+
+.aboutme{
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.content-restriction{
+    width: 100%;
+}
+
+.display-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.display-flex-row{
+    display: flex;
+}
+
+#profile-photo{
+    height: 300px;
+    width: 300px;
+}
+

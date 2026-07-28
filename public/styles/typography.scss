@@ -1,7 +1,10 @@
+@use 'fonts';
+
 h1{
     font-size: 128px;
     font-family: 'Syne';
     font-weight: 800;
+    line-height: 1;
 }
 
 .logo{
@@ -14,4 +17,10 @@ h1{
     font-family: 'Overpass';
     font-style: normal;
     font-weight: 400;
+}
+
+h2{
+    font-size: 78px;
+    font-family: 'Syne';
+    font-weight: 800;
 }

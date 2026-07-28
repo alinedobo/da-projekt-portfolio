@@ -1,0 +1,50 @@
+@use '../../../../public/styles/main' as main;
+
+
+.skills{
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+    &_wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 78px;
+
+        &_row{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            gap: 78px;
+        }
+    }
+}
+
+.skill_box{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    text-align: center;
+    padding: 8px 16px;
+    gap: 8px;
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+
+    img{
+        height: 75px;
+        width: 75px;
+        align-self: center;
+    }
+}
+
+.contact-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}

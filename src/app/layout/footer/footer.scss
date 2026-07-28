@@ -1,4 +1,4 @@
-/* @use '/public/styles/main.scss'; */
+@use '../../../../public/styles/main' as main;
 
 .footer {
   width: 100%;
@@ -17,7 +17,7 @@ p {
   color: white;
 }
 
-#logo {
+.logo {
   font-size: 40px;
   font-weight: bolder;
   font-family: 'Syne';

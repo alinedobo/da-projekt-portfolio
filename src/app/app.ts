@@ -5,10 +5,11 @@ import { Footer } from './layout/footer/footer';
 import { Landing } from './component/landing/landing';
 import { AboutMe } from './component/about-me/about-me';
 import { Skills } from './component/skills/skills';
+import { Portfolio } from './component/portfolio/portfolio';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Footer, Landing, AboutMe, Skills],
+  imports: [RouterOutlet, Header, Footer, Landing, AboutMe, Skills, Portfolio],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

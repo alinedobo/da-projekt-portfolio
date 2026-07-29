@@ -1,0 +1,12 @@
+@use '../../../../public/styles/main' as main;
+
+#portfolio{
+    width: 100%;
+    padding: 24px 100px;
+    gap: 48px;
+    border: 2px solid purple;
+
+    #portfolio-header{
+        align-items: center;
+    }
+}

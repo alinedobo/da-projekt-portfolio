@@ -2,48 +2,20 @@
     <h2>My skills</h2>
     <div class="skills_wrapper">
         <div class="skills_wrapper_row">
+            @for (entry of rowOne; track entry) {
             <div class="skill_box">
-                <img src="assets/icons/Logo_angular.png" alt="logo angular">
-                <p>Angular</p>
+                <img src="{{ entry[1] }}" alt="logo {{ entry[0] }}">
+                <p>{{ entry[0] }}</p>
             </div>
-            <div class="skill_box">
-                <img src="assets/icons/Logo_typescript.png" alt="logo TypeScript">
-                <p>TypeScript</p>
-            </div>
-            <div class="skill_box">
-                <img src="assets/icons/Logo_javascript.png" alt="logo javascript">
-                <p>JavaScript</p>
-            </div>
-            <div class="skill_box">
-                <img src="assets/icons/Logo_html.png" alt="logo html">
-                <p>HTML</p>
-            </div>
-            <div class="skill_box">
-                <img src="assets/icons/Logo_css.png" alt="logo css">
-                <p>CSS</p>
-            </div>
+            }
         </div>
         <div class="skills_wrapper_row">
+            @for (entry of rowTwo; track entry) {
             <div class="skill_box">
-                <img src="assets/icons/Logo_supabase.png" alt="logo supabase">
-                <p>Supabase</p>
+                <img src="{{ entry[1] }}" alt="logo {{ entry[0] }}">
+                <p>{{ entry[0] }}</p>
             </div>
-            <div class="skill_box">
-                <img src="assets/icons/Logo_git.png" alt="logo git">
-                <p>Git</p>
-            </div>
-            <div class="skill_box">
-                <img src="assets/icons/Logo_scrum.png" alt="logo scrum">
-                <p>Scrum</p>
-            </div>
-            <div class="skill_box">
-                <img src="assets/icons/Logo_api.png" alt="logo rest-api">
-                <p>REST-API</p>
-            </div>
-            <div class="skill_box">
-                <img src="assets/icons/Logo_materialdesign.png" alt="logo material-design">
-                <p>Material Design</p>
-            </div>
+            }
         </div>
     </div>
     <div class="contact-me">

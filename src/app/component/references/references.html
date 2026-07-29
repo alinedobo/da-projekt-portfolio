@@ -1,1 +1,22 @@
-<p>references works!</p>
+<div class="content-restriction display-flex-column" id="references">
+    <div class="display-flex-column" id="references-header">
+        <h2>References</h2>
+        <p class="overpass-22">I thrive both independently and as part of a team. Here’s what my colleagues have to say about working with me.</p>
+    </div>
+    <div class="display-flex-row" id="reference-wrapper">
+        @for (item of referenceList; track item.name) {
+            <div class="reference-container display-flex-column">
+                <div>
+                    <img src="assets/icons/icon_quote.svg" alt="">
+                </div>
+                <div class=" display-flex-column reference-author-detail">
+                    <p class="reference-author-name overpass-22">{{item.name}}</p>
+                    <p class="reference-author-title overpass-16">{{item.title}}</p>
+                </div>
+                <div>
+                    <p class="reference-text overpass-18">{{item.reference}}</p>
+                </div>
+            </div>
+            }
+    </div>
+</div>

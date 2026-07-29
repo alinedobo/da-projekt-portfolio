@@ -5,7 +5,30 @@
         <h2>Portfolio</h2>
         <p class="overpass-22">Explore a selection of my work here - Interact with projects to see my skills in action.</p>
     </div>
-    <div class="project-box display-flex-row" id="join-wrapper">
+
+        @for (item of projectList; track item.name; let index = $index, count = $count) {
+            <div class="project-box display-flex-row" id="join-wrapper">
+            <div class="project-preview">
+                <img src="assets/images/{{item.asset}}" alt="screenshot {{item.name}}">
+            </div>
+            <div class="project-details-wrapper display-flex-column">
+                <h3 class="project-rank">{{index+1}}/{{count}}</h3>
+                <div class="project-details-text display-flex-column">
+                    <h3 class="project-name">{{item.name}}</h3>
+                    <h5>{{item.skills}}</h5>
+                    <p class="overpass-16">{{item.description}}
+                    </p>
+                </div>
+                <button class="overpass-22 github-link">Github</button>
+            </div>
+        </div>
+        }
+
+
+
+
+
+<!--     <div class="project-box display-flex-row" id="join-wrapper">
         <div class="project-preview">
             <img src="assets/images/portfolio_join.png" alt="screenshot join">
         </div>
@@ -19,5 +42,11 @@
             </div>
             <button class="overpass-22 github-link">Github</button>
         </div>
-    </div>
+    </div> -->
+
+
+
+
+
+
 </div>

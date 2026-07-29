@@ -4,9 +4,62 @@
     width: 100%;
     padding: 24px 100px;
     gap: 48px;
-    border: 2px solid purple;
+    justify-content: center;
+    border: 1px solid black;
 
     #portfolio-header{
+        width: 100%;
         align-items: center;
+        gap: 24px;
+        border: 1px solid black;
+
+        p{
+            width: 50%;
+            text-align: center;
+        }
+    }
+
+    .project-box{
+        border: 1px solid black;
+        width: 100%;
+        gap: 48px;
+
+        .project-preview{
+            border: 1px solid black;
+            width: 50%;
+            img{
+                width: 100%;
+            }
+        }
+
+        .project-details-wrapper{
+            border: 1px solid black;
+            width: 50%;
+            gap: 36px;
+
+            .project-rank{
+                border: 1px solid black;
+                align-self: flex-end;
+            }
+
+            .project-details-text{
+                border: 1px solid black;
+                gap: 24px;
+
+                .project-name{
+                    border: 1px solid black;
+                    align-items: flex-end;
+                }
+            }
+
+            .github-link{
+                border: 1px solid black;
+                width: fit-content;
+                padding: 8px 16px;
+                border: 2px solid black;
+                align-self: center;
+            }
+
+        }
     }
 }

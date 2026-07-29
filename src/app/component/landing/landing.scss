@@ -24,7 +24,7 @@
             align-self: center;
         }
 
-        p{
+        h4{
             align-self: flex-end;
             position: absolute;
             right: 0;
@@ -32,15 +32,7 @@
             transform: translateY(50%);
             background-color: white;
             padding: 8px;
-            font-weight: 700;
-            font-style: Bold;
-            font-size: 48px;
-            line-height: 100%;
-            letter-spacing: -2.5%;
             text-align: center;
-            vertical-align: middle;
-            color: main.$teal;
-
         }
     }
 

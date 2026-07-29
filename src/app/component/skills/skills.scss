@@ -2,11 +2,24 @@
 
 
 .skills{
-    width: 100%;
+    width: calc(100% - 200px);
     border: 2px solid black;
     display: flex;
     flex-direction: column;
     gap: 64px;
+    padding: 32px;
+    padding-top: 96px;
+    margin: 100px;
+    position: relative;
+
+    h2{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 16px;
+    }
 
     &_wrapper{
         width: 100%;
@@ -47,4 +60,10 @@
     align-items: center;
     justify-content: center;
     gap: 32px;
+}
+
+#from-skills-to-portfolio{
+    position: absolute;
+    top: -100px;
+    left: -20px;
 }

@@ -6,10 +6,11 @@ import { Landing } from './component/landing/landing';
 import { AboutMe } from './component/about-me/about-me';
 import { Skills } from './component/skills/skills';
 import { Portfolio } from './component/portfolio/portfolio';
+import { References } from './component/references/references';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Footer, Landing, AboutMe, Skills, Portfolio],
+  imports: [RouterOutlet, Header, Footer, Landing, AboutMe, Skills, Portfolio, References],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

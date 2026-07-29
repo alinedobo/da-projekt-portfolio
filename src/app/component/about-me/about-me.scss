@@ -1,10 +1,38 @@
 @use '../../../../public/styles/main' as main;
 
-.aboutme{
-    font-family: 'Overpass';
-    font-style: normal;
-    font-weight: 400;
+#aboutme{
+    width: 100%;
     padding: 24px 100px;
+    gap: 48px;
+
+    #aboutme_card{
+        gap: 48px;
+
+        #aboutme-text{
+            gap: 24px;
+            font-size: 22px;
+            
+            #aboutme-description{
+                line-height: 150%;
+            }
+
+            #aboutme-info{
+                gap: 16px;
+
+            }
+
+            .aboutme-info{
+                gap: 8px;
+                align-items: center;
+            }
+        }
+
+        #profile-photo{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+        }
+    }
 }
 
 .content-restriction{
@@ -20,9 +48,5 @@
     display: flex;
 }
 
-#profile-photo{
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-}
+
 

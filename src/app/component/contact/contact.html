@@ -10,21 +10,21 @@
             <p class="overpass-22 white">Say 'Hello'! Let's discuss your ideas and make it happen.</p>
         </div>
         <form [formGroup]="contactform" id="contact-form" class="display-flex-column overpass-16 white form" (ngSubmit)="formSubmit()">
-            <div class="display-flex-row">
+            <div class="display-flex-row form-input-box">
                 <label for="name">Name: </label>
-                <input id="name" type="text" formControlName="name">
+                <input class="input-field" id="name" type="text" formControlName="name">
             </div>
-            <div class="display-flex-row">
+            <div class="display-flex-row form-input-box">
                 <label for="mail">Email: </label>
-                <input id="mail" type="text" formControlName="email">
+                <input class="input-field" id="mail" type="text" formControlName="email">
             </div>
-            <div class="display-flex-row">
+            <div class="display-flex-row form-input-box">
                 <label for="text">Message: </label>
-                <input id="text" type="text" formControlName="message">
+                <input class="input-field" id="text" type="text" formControlName="message">
             </div>
             <div>
                 <img src="" alt="">
-                <p>I've read the PRIVACY POLICY and agree to the processing of my data as outlined.</p>
+                <p>I've read the <a [routerLink]="'privacy'" id="privacy-policy">privacy policy</a> and agree to the processing of my data as outlined.</p>
             </div>
             <button type="submit" (click)="formReset()">Send message</button>
         </form>

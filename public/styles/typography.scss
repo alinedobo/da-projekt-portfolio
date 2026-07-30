@@ -48,6 +48,16 @@ h4{
 }
 
 h5{
+    font-family: Overpass;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 33px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: variables.$teal;
+}
+
+h6{
     font-family: 'Overpass';
     font-weight: 400;
     font-style: Regular;

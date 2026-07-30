@@ -14,10 +14,10 @@
                 <h3 class="project-rank">{{index+1}}/{{count}}</h3>
                 <div class="project-details-text display-flex-column">
                     <h3 class="project-name">{{item.name}}</h3>
-                    <h5>
+                    <h6>
                     @for (technology of item.technologies; track technology) {
                         {{technology}} | 
-                    }</h5>
+                    }</h6>
                     <p class="overpass-16">{{item.description}}</p>
                 </div>
                 <button class="overpass-22 github-link">

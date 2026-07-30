@@ -1,0 +1,10 @@
+@use '../../../../public/styles/main' as main;
+
+#privacy-section{
+    padding: 100px 100px 200px 100px;
+    gap: 64px;
+
+    #privacy-policies{
+        gap: 32px;
+    }
+}

@@ -1,1 +1,30 @@
-<p>contact works!</p>
+
+
+<div class="content-restriction display-flex-column" id="contact-wrapper">
+    <h2>Say 'Hi!'</h2>
+    <div class="display-flex-column" id="contact-form-wrapper">
+        <div class="display-flex-column" id="contact-form-header">
+            <p class="overpass-32-teal">Want to discuss a new project?</p>
+            <p class="overpass-22">Say 'Hello'! Let's discuss your ideas and make it happen.</p>
+        </div>
+    </div>
+    <form [formGroup]="contactform" id="contact-form" class="display-flex-column" (ngSubmit)="formSubmit()">
+        <div class="display-flex-row">
+            <label for="name">Name: </label>
+            <input id="name" type="text" formControlName="name">
+        </div>
+        <div class="display-flex-row">
+            <label for="mail">Email: </label>
+            <input id="mail" type="text" formControlName="email">
+        </div>
+        <div class="display-flex-row">
+            <label for="text">Message: </label>
+            <input id="text" type="text" formControlName="message">
+        </div>
+        <div>
+            <img src="" alt="">
+            <p>I've read the PRIVACY POLICY and agree to the processing of my data as outlined.</p>
+        </div>
+        <button type="submit" (click)="formReset()">Send message</button>
+    </form>
+</div>

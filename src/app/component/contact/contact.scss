@@ -3,18 +3,14 @@
 
 
 #contact-wrapper{
-    border: 5px solid pink;
+    z-index: 1;
     width: 100%;
-    height: 1250px;
     align-items: center;
-    background: url("/assets/images/Rectangle-5-big.svg");
-    background-position: center bottom;
-    background-size: cover;
-    padding-top: 150px;
+    top: 150px;
 
     #contact-header{
     width: 100%;
-    padding: 100px;
+    padding: 16px 100px;
 
         h2{
         align-self: flex-start;
@@ -37,6 +33,7 @@
 
         .form{
             border: 3px solid red;
+            gap: 24px;
         }
     }
 }

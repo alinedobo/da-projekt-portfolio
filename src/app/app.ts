@@ -7,10 +7,11 @@ import { AboutMe } from './component/about-me/about-me';
 import { Skills } from './component/skills/skills';
 import { Portfolio } from './component/portfolio/portfolio';
 import { References } from './component/references/references';
+import { Contact } from './component/contact/contact';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Footer, Landing, AboutMe, Skills, Portfolio, References],
+  imports: [RouterOutlet, Header, Footer, Landing, AboutMe, Skills, Portfolio, References, Contact],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

@@ -5,8 +5,8 @@
         <h2>Portfolio</h2>
         <p class="overpass-22">Explore a selection of my work here - Interact with projects to see my skills in action.</p>
     </div>
-        @for (item of projectList; track item.name; let index = $index, count = $count) {
-            <div class="project-box display-flex-row" id="join-wrapper">
+        @for (item of projectList; track item.name; let index = $index, count = $count, isOdd = $odd) {
+            <div class="project-box display-flex-row" [class.row-reverse]="isOdd" id="{{item.name}}-wrapper">
             <div class="project-preview">
                 <img src="assets/images/{{item.asset}}" alt="screenshot {{item.name}}">
             </div>

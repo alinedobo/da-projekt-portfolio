@@ -13,4 +13,8 @@ export class Header {
   ngOnInit(){
     this.navigationOpen = false;
   }
+
+  toggleNavigation(){
+    this.navigationOpen = !this.navigationOpen
+  }
 }

@@ -3,8 +3,8 @@
         <button>
             <a routerLink=""><p class="logo black">[AD]</p></a>
         </button>
-        <button (click)="navigationOpen = !navigationOpen">
-            <img src="assets/icons/burger-menu.png" alt="" />
+        <button (click)="toggleNavigation()">
+            <img src="assets/icons/burger-menu.png" alt=""/>
         </button>
     </div>
     <div class="" [class.display-flex-column]="navigationOpen" [class.display-none]="!navigationOpen" id="home-nagivation">
@@ -15,9 +15,9 @@
             </button>
         </div>
         <div class="display-flex-column" id="navigation-items">
-            <button class="title-syne">About me</button>
-            <button class="title-syne">My skills</button>
-            <button class="title-syne">Portfolio</button>
+            <button class="title-syne" (click)="toggleNavigation()"><a href="#aboutme">About me</a></button>
+            <button class="title-syne" (click)="toggleNavigation()"><a href="#skills">Skills</a></button>
+            <button class="title-syne" (click)="toggleNavigation()"><a href="#portfolio">Portfolio</a></button>
         </div>
         <div class="display-flex-row" id="headerfooter">
             <div class="display-flex-row" id="headerfooter-content">

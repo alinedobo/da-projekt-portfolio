@@ -5,5 +5,13 @@
     background: url('../../../../public/assets/images//Rectangle-5-big.svg');
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: 150%;
+    background-size: 100%;
+
+    #footer-background{
+        width: 100%;
+        height: main.$footer-height;
+        background-color: black;
+        position: absolute;
+        bottom: 0;
+    }
 }

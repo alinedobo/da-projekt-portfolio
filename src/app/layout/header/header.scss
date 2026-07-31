@@ -1,22 +1,71 @@
 @use '../../../../public/styles/main' as main;
+@use '../footer/footer.scss' as footer;
 
 
-.header {
+#header {
   width: 100%;
   height: 92px;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 30px 100px;
-  background-color: #FFFCF3;
+  background-color: main.$cream;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
-}
 
-#logo {
-  font-size: 40px;
-  font-weight: bolder;
-  font-family: 'Syne';
+  .header-content {
+    width: 100%;
+    padding: 30px 100px;
+    justify-content: space-between;
+
+    #logo {
+      font-size: 40px;
+      font-weight: bolder;
+      font-family: 'Syne';
+    }
+  }
+
+  #home-nagivation {
+    z-index: 1;
+    width: 100%;
+    background-color: main.$cream;
+    width: 100%;
+    height: 99dvh;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    #navigation-header {
+      width: 100%;
+      img {
+
+      }
+
+      #navigation-items {
+        margin-top: 100px;
+      }
+    }
+  }
+
+  #headerfooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50dvh;
+    background: url("/assets/images/Rectangle-5.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    
+    #headerfooter-content {
+      align-items: flex-end;
+      width: 100%;
+      padding: 100px 100px;
+      justify-content: space-between;
+
+      h2{
+        align-self: flex-start;
+        color: white;
+      }
+    }
+  }
 }

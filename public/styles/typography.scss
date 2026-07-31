@@ -51,7 +51,7 @@ h5{
     font-family: Overpass;
     font-weight: 700;
     font-style: Bold;
-    font-size: 33px;
+    font-size: 32px;
     line-height: 120%;
     letter-spacing: 0%;
     color: variables.$teal;
@@ -95,4 +95,14 @@ h6{
 
 .white{
     color: white;
+}
+
+.title-syne{
+    font-family: Syne;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 96px;
+    letter-spacing: -2.5%;
+    text-align: center;
+    vertical-align: middle;
 }

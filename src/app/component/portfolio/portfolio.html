@@ -1,10 +1,11 @@
 
 
-<div class="content-restriction display-flex-column" id="portfolio">
+<section class="content-restriction display-flex-column" id="portfolio">
     <div class="display-flex-column" id="portfolio-header">
         <h2>Portfolio</h2>
         <p class="overpass-22">Explore a selection of my work here - Interact with projects to see my skills in action.</p>
     </div>
+    <div class="display-flex-column" id="projects-wrapper">
         @for (item of projectList; track item.name; let index = $index, count = $count, isOdd = $odd) {
             <div class="project-box display-flex-row" [class.row-reverse]="isOdd" id="{{item.name}}-wrapper">
             <div class="project-preview">
@@ -14,10 +15,11 @@
                 <h3 class="project-rank">{{index+1}}/{{count}}</h3>
                 <div class="project-details-text display-flex-column">
                     <h3 class="project-name">{{item.name}}</h3>
-                    <h6>
-                    @for (technology of item.technologies; track technology) {
-                        {{technology}} | 
-                    }</h6>
+                    <div class="display-flex-row" id="skills-listing">
+                    @for (technology of item.technologies; track technology; let last = $last) {
+                            <h6>{{technology}}</h6><h6 [class.display-none]="last">|</h6>
+                        }
+                    </div>
                     <p class="overpass-16">{{item.description}}</p>
                 </div>
                 <button class="overpass-22 github-link">
@@ -26,4 +28,5 @@
             </div>
         </div>
         }
-</div>
+    </div>
+</section>

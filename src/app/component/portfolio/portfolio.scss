@@ -17,46 +17,56 @@
         }
     }
 
-    .project-box{
-        width: 100%;
-        gap: 48px;
+    #projects-wrapper{
+        gap: 96px;
 
-        .project-preview{
-            max-width: 50%;
-            img{
-                width: 100%;
-            }
-        }
-
-        .project-details-wrapper{
-            max-width: 50%;
-            gap: 36px;
-
-            .project-rank{
-                align-self: flex-end;
-            }
-
-            .project-details-text{
-                gap: 24px;
-
-                .project-name{
-                    align-items: flex-end;
+        .project-box{
+            width: 100%;
+            gap: 48px;
+    
+            .project-preview{
+                max-width: 50%;
+                img{
+                    width: 100%;
                 }
             }
-
-            .github-link{
-                border: 1px solid black;
-                width: fit-content;
-                padding: 8px 16px;
-                border: 3px solid black;
-                align-self: center;
+    
+            .project-details-wrapper{
+                max-width: 50%;
+                gap: 24px;
+    
+                .project-rank{
+                    align-self: flex-end;
+                }
+    
+                .project-details-text{
+                    gap: 24px;
+    
+                    .project-name{
+                        align-items: flex-end;
+                    }
+    
+                    #skills-listing{
+                        gap: 8px;
+                    }
+                }
+    
+                .github-link{
+                    border: 1px solid black;
+                    width: fit-content;
+                    padding: 8px 16px;
+                    border: 3px solid black;
+                    align-self: center;
+                }
+    
             }
-
         }
+    
+        .row-reverse{
+            flex-direction: row-reverse;
+        }
+
     }
 
-    .row-reverse{
-        flex-direction: row-reverse;
-    }
 }
 

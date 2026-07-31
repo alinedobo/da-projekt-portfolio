@@ -37,3 +37,8 @@ body{
 .display-none{
     display: none;
 }
+
+button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

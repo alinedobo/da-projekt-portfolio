@@ -1,0 +1,24 @@
+@use '../../../../public/styles/main' as main;
+
+#legal-section{
+    margin-top: 100px;
+    padding: 100px 100px 200px 100px;
+    gap: 64px;
+
+    #legal-notices{
+        gap: 32px;
+
+        .legal-notices{
+            gap: 8px;
+        }
+
+        ul {
+            display: block;
+            list-style:disc;
+            /* margin-block-start: 1em;
+            margin-block-end: 1em; */
+            padding-inline-start: 40px;
+        }
+    }
+
+}

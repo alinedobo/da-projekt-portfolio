@@ -2,3 +2,29 @@
 @forward 'variables';
 @forward 'templates';
 @forward 'typography';
+
+@use 'variables';
+
+
+
+.content-restriction{
+    width: 100%;
+    max-width: 1440px;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.display-none{
+    display: none;
+}
+
+button:hover{
+    cursor: pointer;
+    color: variables.$teal;
+}

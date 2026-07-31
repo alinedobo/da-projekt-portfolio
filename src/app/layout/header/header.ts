@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink } from "@angular/router";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,4 +7,10 @@ import { RouterLink } from "@angular/router";
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })
-export class Header {}
+export class Header {
+  navigationOpen = false;
+
+  ngOnInit(){
+    this.navigationOpen = false;
+  }
+}

@@ -1,16 +1,18 @@
 <section class="content-restriction display-flex-row" id="header">
     <div class="display-flex-row header-content" id="header-content">
         <button>
-            <a routerLink=""><p class="logo">[AD]</p></a>
+            <a routerLink=""><p class="logo black">[AD]</p></a>
         </button>
-        <button>
+        <button (click)="navigationOpen = !navigationOpen">
             <img src="assets/icons/burger-menu.png" alt="" />
         </button>
     </div>
-   <!--  <div class="display-flex-column" id="home-nagivation">
+    <div class="" [class.display-flex-column]="navigationOpen" [class.display-none]="!navigationOpen" id="home-nagivation">
         <div class="header-content display-flex-row" id="navigation-header">
             <p class="logo">[AD]</p>
-            <img src="assets/icons/close-button-X.svg" alt="">
+            <button (click)="navigationOpen = !navigationOpen">
+                <img src="assets/icons/close-button-X.svg" alt="">
+            </button>
         </div>
         <div class="display-flex-column" id="navigation-items">
             <button class="title-syne">About me</button>
@@ -36,5 +38,5 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 </section>

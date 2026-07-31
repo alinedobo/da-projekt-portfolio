@@ -3,7 +3,7 @@
 .footer {
   width: 100%;
   height: 325px;
-  background: url("/assets/images/Rectangle-5.png");
+  background: url('../../../../public/assets/images/Rectangle-5.png');
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -15,13 +15,6 @@
 
 p {
   color: white;
-}
-
-.logo {
-  font-size: 40px;
-  font-weight: bolder;
-  font-family: 'Syne';
-  color: black;
 }
 
 .links {

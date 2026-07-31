@@ -16,12 +16,6 @@
     width: 100%;
     padding: 30px 100px;
     justify-content: space-between;
-
-    #logo {
-      font-size: 40px;
-      font-weight: bolder;
-      font-family: 'Syne';
-    }
   }
 
   #home-nagivation {
@@ -36,9 +30,6 @@
 
     #navigation-header {
       width: 100%;
-      img {
-
-      }
 
       #navigation-items {
         margin-top: 100px;
@@ -51,7 +42,7 @@
     bottom: 0;
     width: 100%;
     height: 50dvh;
-    background: url("/assets/images/Rectangle-5.png");
+    background: url("../../../../public/assets/images/Rectangle-5.png");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;

@@ -13,38 +13,42 @@
             <div class="display-flex-column form-input-box">
                 <label class="input-field-label" for="name">Name </label>
                 <input class="input-field" id="name" type="text" formControlName="name" placeholder="Please enter your name.">
-                @if (contactform.get("name")?.hasError("required")) {
+                @if (contactform.get("name")?.hasError("required") && !contactform.pristine) {
                     <p class="error-message">Please enter your name.</p>
                 }
-                @if (contactform.get("name")?.hasError("minlength")) {
+                @if (contactform.get("name")?.hasError("minlength") && !contactform.pristine) {
                     <p class="error-message">Please enter at least 3 letters.</p>
                 }
             </div>
             <div class="display-flex-column form-input-box">
                 <label class="input-field-label" for="mail">Email </label>
-                <input class="input-field" id="mail" type="text" formControlName="email">
-                @if (contactform.get("email")?.hasError("required")) {
+                <input class="input-field" id="mail" type="text" formControlName="email" placeholder="Please enter your email.">
+                @if (contactform.get("email")?.hasError("required") && !contactform.pristine) {
                     <p class="error-message">Please enter your email address.</p>
                 }
-                @if (contactform.get("email")?.hasError("email")) {
+                @if (contactform.get("email")?.hasError("email") && !contactform.pristine) {
                     <p class="error-message">Please enter a valid email address.</p>
                 }
             </div>
             <div class="display-flex-column form-input-box">
                 <label class="input-field-label" for="text">Message </label>
-                <input class="input-field" id="text" type="text" formControlName="message">
-                @if (contactform.get("message")?.hasError("required")) {
+                <input class="input-field" id="text" type="text" formControlName="message" placeholder="Please type your message.">
+                @if (contactform.get("message")?.hasError("required") && !contactform.pristine) {
                     <p class="error-message">Please enter your message.</p>
                 }
-                @if (contactform.get("message")?.hasError("minlength")) {
+                @if (contactform.get("message")?.hasError("minlength") && !contactform.pristine) {
                     <p class="error-message">This message is too short.</p>
                 }
             </div>
             <div class="display-flex-row" id="checkbox-div">
-                <input type="checkbox" id="checkbox" name="checkbox" value="">
+                <input type="checkbox" id="checkbox" name="checkbox" value="" (click)="toggleCheckbox()">
                 <label for="checkbox">I've read the <a [routerLink]="'privacy'" id="privacy-policy">privacy policy</a> and agree to the processing of my data as outlined.</label><br>
             </div>
-            <button type="submit" (click)="formReset()">Send message</button>
+            @if (isChecked) {
+                <button type="submit" (click)="formSubmit()">Send message</button>
+            } @else {
+                <button [disabled]="isDisabled" type="submit" (click)="formSubmit()">Send message</button>
+            }
         </form>
     </div>
 </div>

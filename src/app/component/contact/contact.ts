@@ -1,6 +1,12 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import {
+  FormBuilder,
+  FormControl,
+  FormGroup,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -10,18 +16,33 @@ import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } 
 })
 export class Contact {
   fb = inject(FormBuilder);
+  isChecked = false;
+  isDisabled = true;
 
   contactform = this.fb.group({
     name: ['', [Validators.required, Validators.minLength(4)]],
     email: ['', [Validators.required, Validators.email]],
-    message:['', [Validators.required, Validators.minLength(25)]]
+    message: ['', [Validators.required, Validators.minLength(5)]],
   });
 
   formSubmit() {
-    console.log(this.contactform.value);
+    if (this.contactform.valid) {
+      console.log(this.contactform.value);
+      this.formReset();
+      this.formUntouch();
+    }
   }
 
   formReset() {
     this.contactform.reset();
+  }
+
+  formUntouch() {
+    this.contactform.markAsPristine();
+  }
+
+  toggleCheckbox(){
+    this.isChecked = !this.isChecked;
+    this.isDisabled = !this.isChecked;
   }
 }

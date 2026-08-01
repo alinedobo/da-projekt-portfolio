@@ -43,6 +43,5 @@ export class Contact {
 
   toggleCheckbox(){
     this.isChecked = !this.isChecked;
-    this.isDisabled = !this.isChecked;
   }
 }

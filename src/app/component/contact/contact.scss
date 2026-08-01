@@ -31,8 +31,8 @@
         }
 
         .form{
-            
             gap: 24px;
+            align-items: center;
 
             #checkbox-div{
                 gap: 8px;
@@ -41,7 +41,6 @@
                     color: main.$teal;
                 }
             }
-
             .form-input-box{
                 width: 100%;
 
@@ -66,6 +65,17 @@
                 .error-message{
                     color: rgb(232, 104, 104);
                 }
+            }
+
+            button{
+                border: 2px solid white;
+                width: fit-content;
+                padding: 8px 16px;
+
+            }
+            button:disabled{
+                border: 2px solid grey;
+                color: grey;
             }
         }
     }

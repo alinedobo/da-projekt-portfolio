@@ -1,41 +1,18 @@
 @use '../../../../public/styles/main' as main;
 
-.footer {
+#footer {
+  display: flex;
   width: 100%;
   height: main.$footer-height;
   background: url('../../../../public/assets/images/Rectangle-5.png');
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 24px 100px;
-}
-
-p {
-  color: white;
-}
-
-.links {
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  /* padding: 24px 100px; */
   align-items: flex-end;
 
-  p {
-    padding: 10px 5px;
+  #app-footer-content{
+    width: 100%;
   }
 }
 
-.external-logos {
-  width: fit-content;
-  display: flex;
-  gap: 42px;
-
-  img {
-    height: 40px;
-    width: 40px;
-  }
-}

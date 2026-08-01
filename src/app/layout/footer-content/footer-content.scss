@@ -1,0 +1,34 @@
+@use "../../../../public/styles/main.scss" as main;
+
+#footercontent{
+    width: 100%;
+    justify-content: space-between;
+    padding: 24px 100px;
+
+    p {
+    color: white;
+    }
+
+    .links {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        p {
+            padding: 10px 5px;
+        }
+    }
+
+    .external-logos {
+        width: fit-content;
+        display: flex;
+        gap: 42px;
+
+        img {
+            height: 40px;
+            width: 40px;
+        }
+    }
+}

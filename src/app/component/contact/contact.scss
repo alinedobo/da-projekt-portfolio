@@ -2,10 +2,9 @@
 
 
 #contact-wrapper{
-    z-index: 1;
     width: 100%;
     align-items: center;
-    top: 150px;
+    padding-top: 150px;
 
     #contact-header{
         width: 100%;
@@ -49,7 +48,6 @@
                     top: -10px;
                     left: 5px;
                     background-color: black;
-                    z-index: 1;
                 }
                 .input-field{
                     border-bottom: 2px solid white;

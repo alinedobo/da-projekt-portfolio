@@ -18,7 +18,7 @@ export class Contact {
   fb = inject(FormBuilder);
   isChecked = false;
   isDisabled = true;
-  classList = "overpass-16 white display-none"
+  classList = 'overpass-16 white display-none';
 
   contactform = this.fb.group({
     name: ['', [Validators.required, Validators.minLength(4)]],
@@ -26,17 +26,15 @@ export class Contact {
     message: ['', [Validators.required, Validators.minLength(5)]],
   });
 
-  ngOnInit(){
-    this.classList = "overpass-16 white display-none";
+  ngOnInit() {
+    this.classList = 'overpass-16 white display-none';
   }
 
   formSubmit() {
-    if (this.contactform.valid) {
-      console.log(this.contactform.value);
-      this.formReset();
-      this.formUntouch();
-      this.classList = "overpass-16 white"
-    }
+    console.log(this.contactform.value);
+    this.formReset();
+    this.formUntouch();
+    this.classList = 'overpass-16 white';
   }
 
   formReset() {
@@ -47,7 +45,7 @@ export class Contact {
     this.contactform.markAsPristine();
   }
 
-  toggleCheckbox(){
+  toggleCheckbox() {
     this.isChecked = !this.isChecked;
   }
 }

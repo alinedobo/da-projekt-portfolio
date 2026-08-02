@@ -5,6 +5,8 @@
     width: 100%;
     align-items: center;
     padding-top: 150px;
+    gap: 24px;
+    
 
     #contact-header{
         width: 100%;
@@ -14,12 +16,12 @@
         align-self: flex-start;
             color: white;
         }
-    }
 
+    }
     #contact-form-wrapper{
         align-items: center;
         padding: 32px 100px;
-        gap: 24px;
+        gap: 48px;
         width: 100%;
 
         #contact-form-header{
@@ -45,8 +47,8 @@
 
                 .input-field-label{
                     position: absolute;
-                    top: -10px;
                     left: 5px;
+                    top: -20px;
                     background-color: black;
                 }
                 .input-field{

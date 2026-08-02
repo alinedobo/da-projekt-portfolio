@@ -4,7 +4,7 @@
 
 #header {
   width: 100%;
-  height: 92px;
+  height: main.$header-height;
   align-items: center;
   background-color: main.$cream;
   position: fixed;
@@ -12,52 +12,7 @@
   width: 100%;
   z-index: 1;
 
-  .header-content {
+  app-headercontent{
     width: 100%;
-    padding: 30px 100px;
-    justify-content: space-between;
-  }
-
-  #home-nagivation {
-    z-index: 1;
-    width: 100%;
-    background-color: main.$cream;
-    width: 100%;
-    height: 99dvh;
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    #navigation-header {
-      width: 100%;
-
-      #navigation-items {
-        margin-top: 100px;
-      }
-    }
-  }
-
-  #headerfooter {
-    z-index: 1000;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50dvh;
-    background: url("../../../../public/assets/images/Rectangle-5.png");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    
-    #headerfooter-content {
-      align-items: flex-end;
-      width: 100%;
-      padding: 100px 100px;
-      justify-content: space-between;
-
-      h2{
-        align-self: flex-start;
-        color: white;
-      }
-    }
   }
 }

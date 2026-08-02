@@ -1,0 +1,47 @@
+    <div class="display-flex-row header-content" id="header-content">
+        <button>
+            <a routerLink=""><p class="logo black">[AD]</p></a>
+        </button>
+        <div class="display-flex-row" id="right-side-nav">
+            <div class="display-flex-row overpass-16" id="language-toggle">
+                <button>EN</button>
+                <button>DE</button>
+            </div>
+            @if (!navigationOpen) {
+                <button (click)="toggleNavigation()">
+                    <img src="/assets/icons/burger-menu.png" alt=""/>
+                </button>
+                }
+            @else{
+                <button (click)="toggleNavigation()">
+                    <img src="/assets/icons/close-button-X.svg" alt=""/>
+                </button>
+                }       
+        </div>
+    </div>
+    <div class="" [class.display-flex-column]="navigationOpen" [class.display-none]="!navigationOpen" id="home-nagivation">
+        <div class="display-flex-column" id="navigation-items">
+            <button class="title-syne" (click)="toggleNavigation()"><a href="#aboutme-section">About me</a></button>
+            <button class="title-syne" (click)="toggleNavigation()"><a href="#skills-section">Skills</a></button>
+            <button class="title-syne" (click)="toggleNavigation()"><a href="#portfolio-section">Portfolio</a></button>
+        </div>
+        <div class="display-flex-row" id="headerfooter">
+            <div class="display-flex-row" id="headerfooter-content">
+                <div class="display-flex-column" id="headerfooter-hi-email">
+                    <h2>Say 'Hi!'</h2>
+                    <h6 class="white">dobo.aline@gmail.com</h6>
+                </div>   
+                <div class="external-logos display-flex-row" id="headerfooter-ext-links">
+                        <a href="https://github.com/alinedobo" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/logo-github.png" alt="logo github">
+                        </a>
+                        <a href="mailto:dobo.aline@gmail.com">
+                            <img src="assets/icons/logo-mail.png" alt="logo mail">
+                        </a>
+                        <a href="https://www.linkedin.com/in/alinedobo" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/logo-linkedin.png" alt="logo linkedin">
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>

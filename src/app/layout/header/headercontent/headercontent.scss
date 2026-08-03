@@ -30,13 +30,26 @@
         top: main.$header-height;
         right: 0;
 
-            #navigation-header {
-            width: 100%;
-
-            #navigation-items {
-                margin-top: 100px;
-            }
+        #navigation-items {
+            align-items: center;
+            gap: 8px;
         }
+
+        .navigation-item-box{
+            width: fit-content;
+            align-items: center;
+            padding: 0px 32px;
+
+            .hidden-box-corner{
+                border-bottom: 2px solid black;
+                border-left: 2px solid black;
+                height: 40px;
+                width: 30px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        } 
     }
 
     #headerfooter {

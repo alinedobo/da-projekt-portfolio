@@ -21,9 +21,18 @@
     </div>
     <div class="" [class.display-flex-column]="navigationOpen" [class.display-none]="!navigationOpen" id="home-nagivation">
         <div class="display-flex-column" id="navigation-items">
-            <button class="title-syne" (click)="toggleNavigation()"><a href="#aboutme-section">About me</a></button>
-            <button class="title-syne" (click)="toggleNavigation()"><a href="#skills-section">Skills</a></button>
-            <button class="title-syne" (click)="toggleNavigation()"><a href="#portfolio-section">Portfolio</a></button>
+            <div class="navigation-item-box display-flex-column">
+                <div class="hidden-box-corner"></div>
+                <button class="title-syne" (click)="toggleNavigation()"><a href="#aboutme-section">About me</a></button>
+            </div>
+            <div class="navigation-item-box display-flex-column">
+                <div class="hidden-box-corner"></div>
+                <button class="title-syne" (click)="toggleNavigation()"><a href="#skills-section">Skills</a></button>
+            </div>
+            <div class="navigation-item-box display-flex-column">
+                <div class="hidden-box-corner"></div>
+                <button class="title-syne" (click)="toggleNavigation()"><a href="#portfolio-section">Portfolio</a></button>
+            </div>
         </div>
         <div class="display-flex-row" id="headerfooter">
             <div class="display-flex-row" id="headerfooter-content">

@@ -10,36 +10,43 @@
             <p class="overpass-22 white">Say 'Hello'! Let's discuss your ideas and make it happen.</p>
         </div>
         <form [formGroup]="contactform" id="contact-form" class="display-flex-column overpass-16 white form" (ngSubmit)="formSubmit()">
+            
             <div class="display-flex-column form-input-box">
                 <label class="input-field-label" for="name">Name </label>
                 <input class="input-field" id="name" type="text" formControlName="name" placeholder="Please enter your name.">
-                @if (contactform.get("name")?.hasError("required") && !contactform.pristine) {
+                @if (contactform.get("name")?.hasError("required") && contactform.get("name")?.touched) {
                     <p class="error-message">Please enter your name.</p>
-                }
-                @if (contactform.get("name")?.hasError("minlength") && !contactform.pristine) {
+                } @else if (contactform.get("name")?.hasError("minlength") && contactform.get("name")?.touched) {
                     <p class="error-message">Please enter at least 3 letters.</p>
+                } @else {
+                    <p class="display-hidden">.</p>
                 }
             </div>
+
             <div class="display-flex-column form-input-box">
                 <label class="input-field-label" for="mail">Email </label>
                 <input class="input-field" id="mail" type="text" formControlName="email" placeholder="Please enter your email.">
-                @if (contactform.get("email")?.hasError("required") && !contactform.pristine) {
+                @if (contactform.get("email")?.hasError("required") && contactform.get("email")?.touched) {
                     <p class="error-message">Please enter your email address.</p>
-                }
-                @if (contactform.get("email")?.hasError("email") && !contactform.pristine) {
+                } @else if (contactform.get("email")?.hasError("email") && contactform.get("email")?.touched) {
                     <p class="error-message">Please enter a valid email address.</p>
+                } @else {
+                    <p class="display-hidden">.</p>
                 }
             </div>
+
             <div class="display-flex-column form-input-box">
                 <label class="input-field-label" for="text">Message </label>
                 <input class="input-field" id="text" type="text" formControlName="message" placeholder="Please type your message.">
-                @if (contactform.get("message")?.hasError("required") && !contactform.pristine) {
+                @if (contactform.get("message")?.hasError("required") && contactform.get("message")?.touched) {
                     <p class="error-message">Please enter your message.</p>
-                }
-                @if (contactform.get("message")?.hasError("minlength") && !contactform.pristine) {
+                } @else if (contactform.get("message")?.hasError("minlength") && contactform.get("message")?.touched) {
                     <p class="error-message">This message is too short.</p>
+                } @else {
+                    <p class="display-hidden">.</p>
                 }
             </div>
+
             <div class="display-flex-row" id="checkbox-div">
                 <input type="checkbox" id="checkbox" name="checkbox" value="" (click)="toggleCheckbox()" formControlName="privacyCheckbox">
                 <label for="checkbox">I've read the <a routerLink="/privacy" id="privacy-policy">privacy policy</a> and agree to the processing of my data as outlined.</label><br>

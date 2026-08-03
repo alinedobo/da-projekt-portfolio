@@ -9,7 +9,9 @@
         @for (item of projectList; track item.name; let index = $index, count = $count, isOdd = $odd) {
             <div class="project-box display-flex-row" [class.row-reverse]="isOdd" id="{{item.name}}-wrapper">
             <div class="project-preview">
-                <img src="assets/images/{{item.asset}}" alt="screenshot {{item.name}}">
+                <a href="{{item.projectUrl}}" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/{{item.asset}}" alt="screenshot {{item.name}}">
+                </a>
             </div>
             <div class="project-details-wrapper display-flex-column">
                 <h3 class="project-rank">{{index+1}}/{{count}}</h3>

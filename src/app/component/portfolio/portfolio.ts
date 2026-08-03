@@ -15,6 +15,7 @@ export class Portfolio {
       asset: 'portfolio_join.png',
       technologies: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
       githubUrl: 'https://github.com/alinedobo/',
+      projectUrl: ''
     },
     {
       name: 'El Pollo Loco',
@@ -23,6 +24,7 @@ export class Portfolio {
       asset: 'portfolio-ellpolloloco.png',
       technologies: ['JavaScript', 'HTML', 'CSS'],
       githubUrl: 'https://github.com/alinedobo/da-projekt-elpolloloco',
+      projectUrl: 'https://sterndemo.de/'
     },
   ];
 }

@@ -1,6 +1,7 @@
 @use '../../../../public/styles/main' as main;
 
 #privacy-section{
+    min-height: calc(100dvh - main.$footer-height - main.$header-height);
     margin-top: 100px;
     padding: 100px 100px 200px 100px;
     gap: 64px;

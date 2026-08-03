@@ -24,6 +24,7 @@ export class Contact {
     name: ['', [Validators.required, Validators.minLength(4)]],
     email: ['', [Validators.required, Validators.email]],
     message: ['', [Validators.required, Validators.minLength(5)]],
+    privacyCheckbox: ['', [Validators.required]],
   });
 
   ngOnInit() {

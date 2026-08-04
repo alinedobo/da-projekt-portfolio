@@ -17,5 +17,10 @@ export class Headercontent {
   toggleNavigation(){
     this.navigationOpen = !this.navigationOpen;
     console.log("Navigation open: ", this.navigationOpen);
+    if(this.navigationOpen){
+      document.body.classList.add('overflow-hidden');
+    } else if(!this.navigationOpen){
+      document.body.classList.remove('overflow-hidden');
+    }
   }
 }

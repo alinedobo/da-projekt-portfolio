@@ -31,4 +31,9 @@
 button:hover{
     cursor: pointer;
     color: variables.$teal;
+    
+}
+
+a:hover{
+    text-decoration: underline;
 }

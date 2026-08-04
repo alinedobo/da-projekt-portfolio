@@ -22,7 +22,6 @@
                     <p class="display-hidden">.</p>
                 }
             </div>
-
             <div class="display-flex-column form-input-box">
                 <label class="input-field-label" for="mail">Email </label>
                 <input class="input-field" id="mail" type="text" formControlName="email" placeholder="Please enter your email.">
@@ -38,9 +37,7 @@
             <div class="display-flex-column form-input-box">
                 <label class="input-field-label" for="text">Message </label>
                 <!-- <input class="input-field" id="text" type="text" formControlName="message" placeholder="Please type your message."> -->
-
                 <textarea class="input-field" id="text" formControlName="message" rows="4" cols="50" placeholder="Please type your message."></textarea>
-
                 @if (contactform.get("message")?.hasError("required") && contactform.get("message")?.touched) {
                     <p class="error-message">Please enter your message.</p>
                 } @else if (contactform.get("message")?.hasError("minlength") && contactform.get("message")?.touched) {
@@ -49,7 +46,6 @@
                     <p class="display-hidden">.</p>
                 }
             </div>
-
             <div class="display-flex-row" id="checkbox-div">
                 <input type="checkbox" id="checkbox" name="checkbox" value="" (click)="toggleCheckbox()" formControlName="privacyCheckbox">
                 <label for="checkbox">I've read the <a routerLink="/privacy" id="privacy-policy">privacy policy</a> and agree to the processing of my data as outlined.</label><br>

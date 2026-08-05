@@ -13,7 +13,7 @@
         background-position: top center;
         background-size: cover;
         width: 100%;
-        padding: 150px 100px 75px 100px;
+        padding: 150px main.$outside-padding-1440 75px main.$outside-padding-1440;
 
         h2{
         align-self: flex-start;
@@ -24,7 +24,7 @@
     #contact-form-wrapper{
         background-color: black;
         align-items: center;
-        padding: 32px 100px;
+        padding: 32px main.$outside-padding-1440;
         gap: 48px;
         width: 100%;
 

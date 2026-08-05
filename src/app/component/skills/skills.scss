@@ -2,14 +2,14 @@
 
 
 .skills{
-    width: calc(100% - 200px);
+    width: calc(100% - 2 * main.$outside-padding-1440);
     border: 2px solid black;
     display: flex;
     flex-direction: column;
     gap: 64px;
     padding: 32px;
     padding-top: 96px;
-    margin: 100px;
+    margin: main.$outside-padding-1440;
     position: relative;
 
     h2{
@@ -19,6 +19,10 @@
         transform: translate(-50%, -50%);
         background-color: white;
         padding: 16px;
+
+        @media screen and (max-width: 1280px) {
+            padding: 16px 8px;
+        }
     }
 
     &_wrapper{

@@ -2,8 +2,18 @@
 
 #mega-section{
     width: 100%;
-    background: url('../../../../public/assets/images/Rectangle-5-big.svg');
+    /* background: url('../../../../public/assets/images/Rectangle-5-big.svg');
     background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 125%;
+    background-position: bottom center;
+    background-size: 200%; */
+
+
+    #footer-background{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: main.$footer-height;
+        background-color: black ;
+        z-index: -1;
+    }
 }

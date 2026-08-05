@@ -15,9 +15,6 @@ export class Skills {
     ["JavaScript", "assets/icons/Logo_javascript.png"],
     ["HTML", "assets/icons/Logo_html.png"],
     ["CSS", "assets/icons/Logo_css.png"],
-  ]);
-
-  rowTwo = new Map([
     ["Supabase", "assets/icons/Logo_supabase.png"],
     ["Git", "assets/icons/Logo_git.png"],
     ["Scrum", "assets/icons/Logo_scrum.png"],

@@ -5,12 +5,15 @@
     width: 100%;
     align-items: center;
     padding-top: 150px;
-    gap: 24px;
     
 
     #contact-header{
+        background: url('../../../../public/assets/images/Rectangle-5-big.svg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
         width: 100%;
-        padding: 16px 100px;
+        padding: 150px 100px 75px 100px;
 
         h2{
         align-self: flex-start;
@@ -19,6 +22,7 @@
 
     }
     #contact-form-wrapper{
+        background-color: black;
         align-items: center;
         padding: 32px 100px;
         gap: 48px;
@@ -26,7 +30,7 @@
 
         #contact-form-header{
             align-items: center;
-            background-color: black;
+            
             width: 100%;
             gap: 16px;
         }

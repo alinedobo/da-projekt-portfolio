@@ -19,7 +19,7 @@ $breakpoints: (
 );
 
 
-@mixin repond($minsize, $maxsize){
+@mixin respond($minsize, $maxsize){
     @media screen and (min-width: map-get($breakpoins, $minsize)) and (max-width: map-get($breakpoints, $maxsize)) {
         @content
     }

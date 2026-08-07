@@ -12,17 +12,24 @@
     margin: main.$outside-padding-1440;
     position: relative;
 
-    h2{
+    #skills-h2{
+        width: 50%;
         position: absolute;
         top: 0;
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: white;
-        padding: 16px;
 
-        @media screen and (max-width: 1280px) {
-            padding: 16px 8px;
+        @media screen and (max-width: 900px) {
+            width: 80%;
         }
+    }
+
+    h2{
+        padding: 16px;
+        text-align: center;
+
+        
     }
 
     &_wrapper{

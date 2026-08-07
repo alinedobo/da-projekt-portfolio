@@ -1,0 +1,26 @@
+
+/* Extra Small Mobile (Portrait): 320px – 480px
+Small Mobile (Landscape): 481px – 600px
+Small Tablets (Portrait): 601px – 768px
+Large Tablets (Landscape): 769px – 1024px
+Small Desktops and Laptops: 1025px – 1280px
+Large Desktops and High-Resolution Screens: 1281px – 1440px */
+
+
+$breakpoints: (
+    zero: 0px,
+    XS: 320px,
+    S: 480px,
+    SM: 600px,
+    M: 768px,
+    ML: 1024px,
+    L: 1280px,
+    XL: 1440px,
+);
+
+
+@mixin repond($minsize, $maxsize){
+    @media screen and (min-width: map-get($breakpoins, $minsize)) and (max-width: map-get($breakpoints, $maxsize)) {
+        @content
+    }
+}

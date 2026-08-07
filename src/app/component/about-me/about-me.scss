@@ -5,6 +5,10 @@
     padding: 0px main.$outside-padding-1440;
     gap: 48px;
 
+    @media screen and (max-width: 768px) {
+        padding: 0px main.$outside-padding-768;
+    }
+
     #aboutme_card{
         gap: 48px;
 

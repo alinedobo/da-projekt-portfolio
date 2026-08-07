@@ -6,6 +6,10 @@
     gap: 48px;
     justify-content: center;
 
+    @media screen and (max-width: 768px) {
+        padding: 24px main.$outside-padding-768 0px main.$outside-padding-768;
+    }
+
     #portfolio-header{
         width: 100%;
         align-items: center;

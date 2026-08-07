@@ -15,6 +15,10 @@
         width: 100%;
         padding: 150px main.$outside-padding-1440 75px main.$outside-padding-1440;
 
+        @media screen and (max-width: 768px) {
+        padding: 150px main.$outside-padding-768 0px main.$outside-padding-768;
+    }
+
         h2{
         align-self: flex-start;
             color: white;
@@ -27,6 +31,10 @@
         padding: 32px main.$outside-padding-1440;
         gap: 48px;
         width: 100%;
+
+        @media screen and (max-width: 768px) {
+        padding: 32px main.$outside-padding-768 32px main.$outside-padding-768;
+    }
 
         #contact-form-header{
             align-items: center;

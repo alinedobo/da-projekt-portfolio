@@ -13,6 +13,10 @@
     font-weight: 400;
     gap: 32px;
 
+    @media screen and (max-width: 768px) {
+        padding:16px main.$outside-padding-768 0px main.$outside-padding-768;
+    }
+
     #job-title{
         width: fit-content;
         padding: 48px 0px;

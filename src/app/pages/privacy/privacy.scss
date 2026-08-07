@@ -6,6 +6,10 @@
     padding: 100px main.$outside-padding-1440 200px main.$outside-padding-1440;
     gap: 64px;
 
+    @media screen and (max-width: 768px) {
+        padding: 100px main.$outside-padding-768 200px main.$outside-padding-768;
+    }
+
     #privacy-policies{
         gap: 32px;
     }

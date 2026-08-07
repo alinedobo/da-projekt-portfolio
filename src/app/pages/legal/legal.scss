@@ -2,8 +2,12 @@
 
 #legal-section{
     margin-top: 100px;
-    padding: 100px main.$outside-padding-1440 200px main.$outside-padding-1440;
+    padding: 100px main.$outside-padding-1440 100px main.$outside-padding-1440;
     gap: 64px;
+
+    @media screen and (max-width: 768px) {
+        padding: 100px main.$outside-padding-768 200px main.$outside-padding-768;
+    }
 
     #legal-notices{
         gap: 32px;

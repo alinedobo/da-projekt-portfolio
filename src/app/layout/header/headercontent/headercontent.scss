@@ -7,6 +7,10 @@
         padding: 30px main.$outside-padding-1440;
         justify-content: space-between;
 
+        @media screen and (max-width: 768px) {
+        padding: 24px main.$outside-padding-768 24px main.$outside-padding-768;
+    }
+
         #right-side-nav{
             gap: 48px;
 

@@ -6,6 +6,10 @@
     font-size: 40px;
     font-weight: bolder;
     font-family: 'Syne';
+
+    @media screen and (max-width: 480px) {
+        font-size: 32px;
+    }
 }
 
 .overpass-400{

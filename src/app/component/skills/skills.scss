@@ -45,6 +45,10 @@
             gap: 32px;
         }
 
+        @media screen and (max-width: 480px) {
+            gap: 12px;
+        }
+
         &_row{
             display: flex;
             flex-wrap: wrap;
@@ -53,9 +57,13 @@
             justify-content: center;
             gap: 78px;
 
-                    @media screen and (max-width: 768px) {
-        gap: 32px;
-    }
+            @media screen and (max-width: 768px) {
+            gap: 32px;
+            }
+
+            @media screen and (max-width: 480px) {
+            gap: 12px;
+            }
         }
     }
 }

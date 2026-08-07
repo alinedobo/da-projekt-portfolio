@@ -25,6 +25,12 @@
     #reference-wrapper{
         justify-content: space-between;
 
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+        }
+
         .reference-container{
             align-items: center;
             border: 4px solid black;
@@ -32,6 +38,14 @@
             text-align: center;
             gap: 24px;
             padding: 16px 8px;
+
+            @media screen and (max-width: 768px) {
+            width: 60%;
+            height: 400px;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+            }
     
             img{
                 height: 40px;
@@ -53,4 +67,10 @@
     position: absolute;
     top: -100px;
     right: -40px;
+
+    @media screen and (max-width: 768px) {
+        top: 10%;
+        right: 25%;
+    }
+    
 }

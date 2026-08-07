@@ -9,6 +9,10 @@
         padding: 24px main.$outside-padding-768;
     }
 
+    @media screen and (max-width: 480px) {
+        padding: 24px main.$outside-padding-480;
+    }
+
     p {
     color: white;
     }

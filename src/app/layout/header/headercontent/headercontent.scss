@@ -8,8 +8,12 @@
         justify-content: space-between;
 
         @media screen and (max-width: 768px) {
-        padding: 24px main.$outside-padding-768 24px main.$outside-padding-768;
-    }
+            padding: 24px main.$outside-padding-768 24px main.$outside-padding-768;
+        }
+
+        @media screen and (max-width: 480px) {
+            padding: 24px main.$outside-padding-480 24px main.$outside-padding-480;
+        }
 
         #right-side-nav{
             gap: 48px;
@@ -73,6 +77,14 @@
             padding: 100px 100px;
             justify-content: space-between;
 
+            @media screen and (max-width: 768px) {
+                padding: 100px main.$outside-padding-768;
+            }
+
+            @media screen and (max-width: 480px) {
+                padding: 100px main.$outside-padding-480;
+            }
+
             #headerfooter-hi-email{
                 gap: 16px;
             }
@@ -81,9 +93,14 @@
                 width: fit-content;
                 display: flex;
                 gap: 42px;
+
+                @media screen and (max-width: 480px) {
+                    gap: 24px;
+                }
+
                 img {
-                    height: 40px;
-                    width: 40px;
+                    height: 32px;
+                    width: 32px;
                 }
             }
 

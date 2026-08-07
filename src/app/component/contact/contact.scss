@@ -16,11 +16,15 @@
         padding: 150px main.$outside-padding-1440 75px main.$outside-padding-1440;
 
         @media screen and (max-width: 768px) {
-        padding: 150px main.$outside-padding-768 0px main.$outside-padding-768;
-    }
+            padding: 150px main.$outside-padding-768 0px main.$outside-padding-768;
+        }
+
+        @media screen and (max-width: 768px) {
+            padding: 150px main.$outside-padding-480 0px main.$outside-padding-480;
+        }
 
         h2{
-        align-self: flex-start;
+            align-self: flex-start;
             color: white;
         }
 

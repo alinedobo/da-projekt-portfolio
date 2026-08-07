@@ -17,6 +17,10 @@
         padding:16px main.$outside-padding-768 0px main.$outside-padding-768;
     }
 
+    @media screen and (max-width: 480px) {
+        padding:16px main.$outside-padding-480 0px main.$outside-padding-480;
+    }
+
     #job-title{
         width: fit-content;
         padding: 48px 0px;

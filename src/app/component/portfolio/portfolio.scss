@@ -22,22 +22,39 @@
     }
 
     #projects-wrapper{
+        width: 100%;
         gap: 96px;
 
         .project-box{
             width: 100%;
             gap: 48px;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                gap: 16px;
+            }
     
             .project-preview{
                 max-width: 50%;
                 img{
                     width: 100%;
                 }
+
+                @media screen and (max-width: 768px) {
+                    max-width: 80%;
+                }
+
             }
     
             .project-details-wrapper{
                 max-width: 50%;
                 gap: 24px;
+
+                @media screen and (max-width: 768px) {
+                    max-width: 80%;
+                }
     
                 .project-rank{
                     align-self: flex-end;
@@ -68,6 +85,12 @@
     
         .row-reverse{
             flex-direction: row-reverse;
+
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+                align-items: center;
+            }
+
         }
 
     }

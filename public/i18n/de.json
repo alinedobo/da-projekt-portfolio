@@ -1,5 +1,5 @@
 {
-    "main":{
+    "landing":{
         "scroll": "Runter",
         "down": "Scrollen"
     },
@@ -25,8 +25,8 @@
                 "description": "Ein vom Kanban-System inspirierter Aufgabenmanager. Erstellen und organisieren Sie Aufgaben per Drag & Drop und weisen Sie ihnen Benutzer und Kategorien zu.",
                 "asset": "portfolio_join.png",
                 "technologies": ["Angular", "TypeScript", "HTML", "CSS", "Firebase"],
-                "githubUrl": "https://github.com/alinedobo/",
-                "projectUrl": "http://frontend.alinedobo.com/join"
+                "githubUrl": "https://github.com/alinedobo/join",
+                "projectUrl": "https://frontend.alinedobo.com/join"
             },
             {
                 "name": "El Pollo Loco",
@@ -62,7 +62,7 @@
     "contact":{
         "hi": "'Hallo!' sagen",
         "discuss-project": "Möchten Sie ein neues Projekt besprechen?",
-        "discuss-project-sub": "Sagen Sie „Hallo“! Lassen Sie uns Ihre Ideen besprechen und sie in die Tat umsetzen.",
+        "discuss-project-sub": "Lassen Sie uns Ihre Ideen besprechen und sie in die Tat umsetzen.",
         "name": "Ihr Name",
         "name-enter": "Bitte geben Sie Ihren Namen ein.",
         "name-too-short": "Der Name muss mindestens 3 Buchstaben enthalten",

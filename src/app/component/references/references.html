@@ -1,10 +1,10 @@
 <div class="content-restriction display-flex-column" id="references">
     <div class="display-flex-column" id="references-header">
-        <h2>References</h2>
-        <p class="overpass-22">I thrive both independently and as part of a team. Here’s what my colleagues have to say about working with me.</p>
+        <h2>{{ 'references.title' | translate }}</h2>
+        <p class="overpass-22">{{ 'references.description' | translate}}</p>
     </div>
     <div class="display-flex-row" id="reference-wrapper">
-        @for (item of referenceList; track item.name) {
+        @for (item of 'references.quotes' | translate; track item.name) {
             <div class="reference-container display-flex-column">
                 <div>
                     <img src="assets/icons/icon_quote.svg" alt="">

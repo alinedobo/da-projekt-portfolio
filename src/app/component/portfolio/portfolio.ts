@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
+import { TranslatePipe, TranslateDirective } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-portfolio',
-  imports: [],
+  imports: [TranslatePipe, TranslateDirective],
   templateUrl: './portfolio.html',
   styleUrl: './portfolio.scss',
 })
 export class Portfolio {
-  readonly projectList = [
+  /* readonly projectList = [
     {
       name: 'Join',
       description:
@@ -26,5 +27,5 @@ export class Portfolio {
       githubUrl: 'https://github.com/alinedobo/da-projekt-elpolloloco',
       projectUrl: 'http://frontend.alinedobo.com/el-pollo-loco/'
     },
-  ];
+  ]; */
 }

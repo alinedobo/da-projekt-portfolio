@@ -1,0 +1,80 @@
+{
+    "main": {
+        "scroll": "Scroll Down"
+    },
+    "about": {
+        "title": "About me",
+        "description": "Write some information about yourself that is IT related. Why are you passionate about coding? Show a desire to learn new technologies. Add a brief description of your problem-solving approach.You can include some key traits like: analytical thinking, creativity, persistence and collaboration.",
+        "based": "Based in Berlin-ish",
+        "remote": "Open to work remote",
+        "talk-cta": "Let's talk"
+    },
+    "skills": {
+        "title": "My Skills",
+        "missing-skills": "Don't see the skill you need? ",
+        "contact-cta": "Contact me!",
+        "learn": "I'm always ready to learn!"
+    },
+    "portfolio": {
+        "title": "Portfolio",
+        "description": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+        "projects": [
+            {
+                "name": "Join",
+                "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+                "asset": "portfolio_join.png",
+                "technologies": ["Angular", "TypeScript", "HTML", "CSS", "Firebase"],
+                "githubUrl": "https://github.com/alinedobo/",
+                "projectUrl": "http://frontend.alinedobo.com/join"
+            },
+            {
+                "name": "El Pollo Loco",
+                "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+                "asset": "portfolio-ellpolloloco.png",
+                "technologies": ["JavaScript", "HTML", "CSS"],
+                "githubUrl": "https://github.com/alinedobo/da-projekt-elpolloloco",
+                "projectUrl": "http://frontend.alinedobo.com/el-pollo-loco/"
+            }
+        ]
+    },
+    "references": {
+        "title": "References",
+        "description": "I thrive both independently and as part of a team. Here’s what my colleagues have to say about working with me.",
+        "quotes": [
+            {
+                "name": "Aline Dobobo",
+                "title": "Frontend Developer bo",
+                "reference": "Aline really kept the team together with their great organization and clear communication. We wouldn't have got this far without their commitment."
+            },
+            {
+                "name": "Aline Dobobo",
+                "title": "Frontend Developer bo",
+                "reference": "Aline was a top team colleague at DA. Their positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals."
+            },
+            {
+                "name": "Aline Dobobo",
+                "title": "Frontend Developer bo",
+                "reference": "It was a great pleasure to work with Aline. They know how to push and encourage team members to present the best work possible, always adding something to brainstorm. Regarding the well-being of group members, they were always present and available to listen and help others, with a great sense of humor as well."
+            }
+        ]
+    },
+    "contact": {
+        "hi": "Say 'Hi!'",
+        "discuss-project": "Want to discuss a new project?",
+        "discuss-project-sub": "Say 'Hello'! Let's discuss your ideas and make it happen.",
+        "name": "Your Name",
+        "name-enter": "Please enter your name.",
+        "name-too-short": "Please enter at least 3 letters.",
+        "email": "Your email",
+        "email-enter": "Please enter your email address.",
+        "email-invalid": "Please enter a valid email address.",
+        "message": "Your message",
+        "message-enter": "Please type your message.",
+        "mesage-too-short": "This message is too short.",
+        "send": "Send message",
+        "privacy-read": "I've read the",
+        "privacy-policy": "privacy policy",
+        "privacy-agree": "and agree to the processing of my data as outlined.",
+        "confirmation": "Thank you for your message."
+    }
+}

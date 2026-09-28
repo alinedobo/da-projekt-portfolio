@@ -2,11 +2,11 @@
 
 <section class="content-restriction display-flex-column" id="portfolio">
     <div class="display-flex-column" id="portfolio-header">
-        <h2>Portfolio</h2>
-        <p class="overpass-22">Explore a selection of my work here - Interact with projects to see my skills in action.</p>
+        <h2>{{'portfolio.title' | translate}}</h2>
+        <p class="overpass-22">{{'portfolio.description' | translate}}</p>
     </div>
     <div class="display-flex-column" id="projects-wrapper">
-        @for (item of projectList; track item.name; let index = $index, count = $count, isOdd = $odd) {
+        @for (item of 'portfolio.projects' | translate; track item.name; let index = $index, count = $count, isOdd = $odd) {
             <div class="project-box display-flex-row" [class.row-reverse]="isOdd" id="{{item.name}}-wrapper">
             <div class="project-preview">
                 <a href="{{item.projectUrl}}" target="_blank" rel="noopener noreferrer">

@@ -7,6 +7,7 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
+import { CrudService } from '../../services/crud';
 
 @Component({
   selector: 'app-contact',
@@ -19,6 +20,8 @@ export class Contact {
   isChecked = false;
   isDisabled = true;
   classList = 'overpass-16 white display-none';
+  crud = inject(CrudService);
+  table = 'frontend';
 
   contactform = this.fb.group({
     name: ['', [Validators.required, Validators.minLength(4)]],
@@ -33,6 +36,7 @@ export class Contact {
 
   formSubmit() {
     console.log(this.contactform.value);
+    this.createRequest();
     this.formReset();
     this.formUntouch();
     this.classList = 'overpass-16 white';
@@ -48,5 +52,14 @@ export class Contact {
 
   toggleCheckbox() {
     this.isChecked = !this.isChecked;
+  }
+
+  createRequest(){
+    const newRequest = {
+      name: this.contactform.value.name!,
+      email: this.contactform.value.email!,
+      message: this.contactform.value.message!,
+    }
+    this.crud.saveContactRequest(newRequest);
   }
 }

@@ -1,14 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, signal, inject } from '@angular/core';
 import { RouterLink } from "@angular/router";
+import {TranslatePipe, TranslateDirective, TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-headercontent',
-  imports: [RouterLink],
+  imports: [RouterLink, TranslatePipe, TranslateDirective],
   templateUrl: './headercontent.html',
   styleUrl: './headercontent.scss',
 })
 export class Headercontent {
   navigationOpen = false;
+
+  private translate = inject(TranslateService);
+
+  useLanguage(language: string): void {
+      this.translate.use(language);
+  }
 
   ngOnInit(){
     this.navigationOpen = false;

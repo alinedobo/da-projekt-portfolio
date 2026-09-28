@@ -12,8 +12,8 @@
     </button>
     <div class="display-flex-row" id="right-side-nav">
         <div class="display-flex-row overpass-16" id="language-toggle">
-            <button>EN</button>
-            <button>DE</button>
+            <button (click)="useLanguage('en')">EN</button>
+            <button (click)="useLanguage('de')">DE</button>
         </div>
         @if (!navigationOpen) {
             <button (click)="toggleNavigation()">
@@ -36,26 +36,30 @@
         <div class="navigation-item-box display-flex-column">
             <div class="hidden-box-corner"></div>
             <button class="title-syne" (click)="toggleNavigation()">
-                <a href="#aboutme-section">About me</a>
+                <a href="#aboutme-section">{{ 'about.title' | translate }}</a>
             </button>
         </div>
         <div class="navigation-item-box display-flex-column">
             <div class="hidden-box-corner"></div>
             <button class="title-syne" (click)="toggleNavigation()">
-                <a href="#skills-section">Skills</a>
+                <a href="#skills-section">{{ 'skills.title' | translate }}</a>
             </button>
         </div>
         <div class="navigation-item-box display-flex-column">
             <div class="hidden-box-corner"></div>
             <button class="title-syne" (click)="toggleNavigation()">
-                <a href="#portfolio-section">Portfolio</a>
+                <a href="#portfolio-section">{{ 'portfolio.title' | translate }}</a>
             </button>
         </div>
     </div>
     <div class="display-flex-row" id="headerfooter">
         <div class="display-flex-row" id="headerfooter-content">
             <div class="display-flex-column" id="headerfooter-hi-email">
-                <h2>Say 'Hi!'</h2>
+                <button class="title-syne" (click)="toggleNavigation()">
+                    <h2>
+                        <a href="#contact-wrapper">{{ 'contact.hi' | translate }}</a>
+                    </h2>
+                </button>
                 <h6 class="white">dobo.aline@gmail.com</h6>
             </div>
             <div class="external-logos display-flex-row" id="headerfooter-ext-links">

@@ -2,61 +2,60 @@
 
 <section class="content-restriction display-flex-column" id="contact-wrapper">
     <div class="display-flex-column" id="contact-header">
-        <h2 id="sayhi">Say 'Hi!'</h2>
+        <h2 id="sayhi">{{'contact.hi' | translate}}</h2>
     </div>
     <div class="display-flex-column overpass-16 white" id="contact-form-wrapper">
         <div class="display-flex-column" id="contact-form-header">
-            <h5>Want to discuss a new project?</h5>
-            <p class="overpass-22 white">Say 'Hello'! Let's discuss your ideas and make it happen.</p>
+            <h5>{{'contact.discuss-project' | translate}}</h5>
+            <p class="overpass-22 white">{{'contact.discuss-project-sub' | translate}}</p>
         </div>
         <form [formGroup]="contactform" id="contact-form" class="display-flex-column overpass-16 white form" (ngSubmit)="formSubmit()">
             
             <div class="display-flex-column form-input-box">
-                <label class="input-field-label" for="name">Name </label>
-                <input class="input-field" id="name" type="text" formControlName="name" placeholder="Please enter your name.">
+                <label class="input-field-label" for="name">{{'contact.name' | translate}}</label>
+                <input class="input-field" id="name" type="text" formControlName="name" placeholder="{{'contact.name-enter' | translate}}">
                 @if (contactform.get("name")?.hasError("required") && contactform.get("name")?.touched) {
-                    <p class="error-message">Please enter your name.</p>
+                    <p class="error-message">{{'contact.name-enter' | translate}}</p>
                 } @else if (contactform.get("name")?.hasError("minlength") && contactform.get("name")?.touched) {
-                    <p class="error-message">Please enter at least 3 letters.</p>
+                    <p class="error-message">{{'contact.name-too-short' | translate}}</p>
                 } @else {
                     <p class="display-hidden">.</p>
                 }
             </div>
             <div class="display-flex-column form-input-box">
-                <label class="input-field-label" for="mail">Email </label>
-                <input class="input-field" id="mail" type="text" formControlName="email" placeholder="Please enter your email.">
+                <label class="input-field-label" for="mail">{{'contact.email' | translate}}</label>
+                <input class="input-field" id="mail" type="text" formControlName="email" placeholder="{{'contact.email-enter' | translate}}">
                 @if (contactform.get("email")?.hasError("required") && contactform.get("email")?.touched) {
-                    <p class="error-message">Please enter your email address.</p>
+                    <p class="error-message">{{'contact.email-enter' | translate}}</p>
                 } @else if (contactform.get("email")?.hasError("email") && contactform.get("email")?.touched) {
-                    <p class="error-message">Please enter a valid email address.</p>
+                    <p class="error-message">{{'contact.email-invalid' | translate}}</p>
                 } @else {
                     <p class="display-hidden">.</p>
                 }
             </div>
 
             <div class="display-flex-column form-input-box">
-                <label class="input-field-label" for="text">Message </label>
-                <!-- <input class="input-field" id="text" type="text" formControlName="message" placeholder="Please type your message."> -->
-                <textarea class="input-field" id="text" formControlName="message" rows="4" cols="50" placeholder="Please type your message."></textarea>
+                <label class="input-field-label" for="text">{{'contact.message' | translate}}</label>
+                <textarea class="input-field" id="text" formControlName="message" rows="4" cols="50" placeholder="{{'contact.message-enter' | translate}}"></textarea>
                 @if (contactform.get("message")?.hasError("required") && contactform.get("message")?.touched) {
-                    <p class="error-message">Please enter your message.</p>
+                    <p class="error-message">{{'contact.message-enter' | translate}}</p>
                 } @else if (contactform.get("message")?.hasError("minlength") && contactform.get("message")?.touched) {
-                    <p class="error-message">This message is too short.</p>
+                    <p class="error-message">{{'contact.message-too-short' | translate}}</p>
                 } @else {
                     <p class="display-hidden">.</p>
                 }
             </div>
             <div class="display-flex-row" id="checkbox-div">
                 <input type="checkbox" id="checkbox" name="checkbox" value="" (click)="toggleCheckbox()" formControlName="privacyCheckbox">
-                <label for="checkbox">I've read the <a routerLink="/privacy" id="privacy-policy">privacy policy</a> and agree to the processing of my data as outlined.</label><br>
+                <label for="checkbox">{{'contact.privacy-read' | translate}} <a routerLink="/privacy" id="privacy-policy">{{'contact.privacy-policy' | translate}}</a> {{'contact.privacy-agree' | translate}}</label><br>
             </div>
             @if(contactform.valid && isChecked){
-                <button type="submit" (click)="formSubmit()">Send message</button>
+                <button type="submit" (click)="formSubmit()">{{'contact.send' | translate}}</button>
             }
             @else {
-                <button [disabled]="isDisabled" type="submit">Send message</button>
+                <button [disabled]="isDisabled" type="submit">{{'contact.send' | translate}}</button>
             }
-            <p id="thank-you" [class]="classList">Thank you for your message.</p>
+            <p id="thank-you" [class]="classList">{{'contact.confirmation' | translate}}</p>
         </form>
     </div>
 </section>

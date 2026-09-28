@@ -1,6 +1,7 @@
 {
     "main":{
-        "scroll": "Runter Scrollen"
+        "scroll": "Runter",
+        "down": "Scrollen"
     },
     "about":{
         "title": "Über mich",

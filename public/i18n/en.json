@@ -1,6 +1,7 @@
 {
     "main": {
-        "scroll": "Scroll Down"
+        "scroll": "Scroll",
+        "down": "Down"
     },
     "about": {
         "title": "About me",

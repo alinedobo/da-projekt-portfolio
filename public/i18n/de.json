@@ -109,5 +109,27 @@
         "indemnity-breach": "und/oder Ihren Verstoß gegen diesen rechtlichen Hinweis.",
         "questions": "Bei Fragen oder Anmerkungen wenden Sie sich bitte an uns unter",
         "date": "Datum"
+    },
+    "privacy": {
+        "title": "Datenschutz- erklärung",
+        "intro-one": "Diese Datenschutzerklärung („Erklärung“) soll Ihnen verdeutlichen, wie Portfolio („uns“, „wir“, „unser“) die Daten, die Sie uns beim Besuch und bei der Nutzung unserer Website („Blog“, „Dienst“) zur Verfügung stellen, verwendet und schützt.",
+        "intro-two": "Wir behalten uns das Recht vor, diese Richtlinie jederzeit zu ändern; Sie werden darüber umgehend informiert. Wenn Sie sichergehen möchten, dass Sie über die neuesten Änderungen auf dem Laufenden sind, empfehlen wir Ihnen, diese Seite regelmäßig zu besuchen.",
+        "data-title": "Welche Nutzerdaten wir erheben",
+        "data-text": "Wenn Sie die Website besuchen, erfassen wir möglicherweise folgende Daten:",
+        "data-list": "Ihre Kontaktdaten und Ihre E-Mail-Adresse.",
+        "safeguarding-title": "Schutz und Sicherung der Daten",
+        "safeguarding-description": "Portfolio verpflichtet sich, Ihre Daten zu schützen und vertraulich zu behandeln. Portfolio hat alles in seiner Macht Stehende getan, um Datendiebstahl, unbefugten Zugriff und Offenlegung zu verhindern, indem es die neuesten Technologien und Software eingesetzt hat, die uns dabei helfen, alle online erfassten Informationen zu schützen.",
+        "cookie-title": "Unsere Cookie-Richtlinie",
+        "cookie-p-one": "Sobald Sie der Verwendung von Cookies durch unseren Blog zustimmen, erklären Sie sich auch damit einverstanden, dass die dabei gesammelten Daten zu Ihrem Online-Verhalten verwendet werden (Analyse des Web-Traffics, der von Ihnen besuchten Webseiten und der Seiten, auf denen Sie die meiste Zeit verbringen).",
+        "cookie-p-two": "Die Daten, die wir mithilfe von Cookies erfassen, dienen dazu, unseren Blog an Ihre Bedürfnisse anzupassen. Nachdem wir die Daten für statistische Auswertungen verwendet haben, werden sie vollständig aus unseren Systemen gelöscht.",
+        "cookie-p-three": "Bitte beachten Sie, dass wir durch Cookies in keiner Weise Zugriff auf Ihren Computer erhalten. Sie dienen ausschließlich dazu, zu erfassen, welche Seiten Sie nützlich finden und welche nicht, damit wir Ihnen ein besseres Nutzererlebnis bieten können.",
+        "cookie-p-four": "Wenn Sie Cookies deaktivieren möchten, können Sie dies in den Einstellungen Ihres Internetbrowsers tun. Unter https://www.internetcookies.com finden Sie umfassende Informationen dazu, wie Sie dies bei einer Vielzahl von Browsern und Geräten vornehmen können.",
+        "links-title": "Links zu anderen Websites",
+        "links-description": "Unsere Website kann Links enthalten, die zu anderen Websites führen. Wenn Sie auf diese Links klicken, übernimmt Portfolio keine Verantwortung für den Schutz Ihrer Daten und Ihrer Privatsphäre. Der Besuch dieser Websites unterliegt nicht dieser Datenschutzerklärung. Bitte lesen Sie unbedingt die Datenschutzerklärung der Website, zu der Sie von unserer Website aus gelangen.",
+        "collect-title": "Einschränkung der Erhebung Ihrer personenbezogenen Daten",
+        "collect-p-one": "Möglicherweise möchten Sie irgendwann die Nutzung und Erhebung Ihrer personenbezogenen Daten einschränken. Dazu können Sie wie folgt vorgehen:",
+        "collect-p-two": "Achten Sie beim Ausfüllen der Formulare auf der Website darauf, ob es ein Kästchen gibt, das Sie nicht ankreuzen können, falls Sie Ihre persönlichen Daten nicht preisgeben möchten.",
+        "collect-p-three": "Falls Sie bereits zugestimmt haben, Ihre Daten an uns weiterzugeben, können Sie sich gerne per E-Mail an uns wenden – wir ändern dies dann gerne für Sie.",
+        "collect-p-four": "Portfolio wird Ihre personenbezogenen Daten nicht an Dritte vermieten, verkaufen oder weitergeben, es sei denn, wir haben Ihre Einwilligung dazu. Wir könnten dies tun, wenn wir gesetzlich dazu verpflichtet sind. Ihre personenbezogenen Daten werden verwendet, wenn wir Ihnen Werbematerialien zusenden müssen, sofern Sie dieser Datenschutzerklärung zustimmen."
     }
 }

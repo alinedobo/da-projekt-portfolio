@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { Header } from '../../layout/header/header';
 import { Footer } from '../../layout/footer/footer';
+import {TranslatePipe} from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-privacy',
-  imports: [Header, Footer],
+  imports: [Header, Footer, TranslatePipe],
   templateUrl: './privacy.html',
   styleUrl: './privacy.scss',
 })

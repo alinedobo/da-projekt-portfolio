@@ -1,5 +1,24 @@
 @use '../../../../public/styles/main' as main;
 
+p {
+    font-family: Overpass;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
+
+li{
+    font-family: Overpass;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
+
+
 #legal-section{
     margin-top: 100px;
     padding: 100px main.$outside-padding-1440 100px main.$outside-padding-1440;

@@ -12,8 +12,8 @@
     </button>
     <div class="display-flex-row" id="right-side-nav">
         <div class="display-flex-row overpass-16" id="language-toggle">
-            <button (click)="useLanguage('en')">EN</button>
-            <button (click)="useLanguage('de')">DE</button>
+            <button [class.activated]="englishActive" (click)="activateEnglish()">EN</button>
+            <button [class.activated]="germanActive" (click)="activateGerman()">DE</button>
         </div>
         @if (!navigationOpen) {
             <button (click)="toggleNavigation()">
@@ -57,7 +57,7 @@
             <div class="display-flex-column" id="headerfooter-hi-email">
                 <button class="title-syne" (click)="toggleNavigation()">
                     <h2>
-                        <a href="#contact-wrapper">{{ 'contact.hi' | translate }}</a>
+                        <a class="hover-teal" href="#contact-wrapper">{{ 'contact.hi' | translate }}</a>
                     </h2>
                 </button>
                 <h6 class="white">dobo.aline@gmail.com</h6>

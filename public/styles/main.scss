@@ -5,47 +5,58 @@
 
 @use 'variables';
 
-
-
-.content-restriction{
+.content-restriction {
     width: 100%;
     max-width: 1440px;
 }
 
-.space-between{
+.space-between {
     justify-content: space-between;
 }
 
-.position-relative{
+.position-relative {
     position: relative;
 }
 
-.display-none{
+.display-none {
     display: none;
 }
 
-.display-hidden{
+.display-hidden {
     color: black;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
-    color: variables.$teal;
-    
 }
 
-a:hover{
+a:hover {
+    cursor: pointer;
+}
+
+.hover-teal:hover {
+    color: variables.$teal;
+}
+
+.hover-underline:hover {
     text-decoration: underline;
 }
 
-.section-side-padding{
+.section-side-padding {
     padding: 0px 100px 0px 100px;
 }
 
-.teal{
+.teal {
     color: variables.$teal;
 }
 
-.bold{
+.bold {
     font-weight: bold;
+}
+.space-between {
+    justify-content: space-between;
+}
+
+.position-relative {
+    position: relative;
 }

@@ -1,6 +1,10 @@
 @use '../../../../../public/styles/main.scss' as main;
 @use '../header.scss' as header;
 
+.activated {
+    border: 2px solid main.$teal;
+}
+
 .header-content {
     width: 100%;
     padding: 30px main.$outside-padding-1440;
@@ -18,7 +22,11 @@
         gap: 48px;
 
         #language-toggle {
-            gap: 8px;
+            gap: 2px;
+
+            button {
+                padding: 8px;
+            }
 
             button:hover {
                 border-bottom: 2px solid black;

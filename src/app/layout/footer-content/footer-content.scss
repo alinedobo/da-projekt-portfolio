@@ -102,15 +102,5 @@
         @media screen and (max-width: 768px) {
             gap: 16px;
         }
-
-        img {
-            height: 40px;
-            width: 40px;
-
-            @media screen and (max-width: 768px) {
-                height: 32px;
-                width: 32px;
-            }
-        }
     }
 }

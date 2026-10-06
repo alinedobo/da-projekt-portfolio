@@ -60,3 +60,17 @@ a:hover {
 .position-relative {
     position: relative;
 }
+
+.sm-icon {
+    height: 40px;
+    width: 40px;
+    @media screen and (max-width: 768px) {
+        height: 32px;
+        width: 32px;
+    }
+}
+.sm-icon:hover {
+    transform: scale(1.5);
+    transform: translate(0px, -25px);
+    transition: all 0.25s ease-in;
+}

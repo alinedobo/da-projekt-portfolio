@@ -69,13 +69,14 @@
             gap: 16px;
 
             .arrow-down {
-                animation: arrowDownAnimation 1s;
+                animation: arrowDownAnimation 2s;
+                animation-iteration-count: infinite;
                 position: relative;
             }
 
             @keyframes arrowDownAnimation {
                 0% {
-                    top: -200px;
+                    top: -125px;
                 }
                 100% {
                     top: 0px;

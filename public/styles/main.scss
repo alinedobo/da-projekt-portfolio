@@ -74,3 +74,23 @@ a:hover {
     transform: translate(0px, -25px);
     transition: all 0.25s ease-in;
 }
+
+.arrow-down-left {
+    position: relative;
+    animation: arrowDownLeftAnimation 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrowDownLeftAnimation {
+    0% {
+        right: 0px;
+    }
+    100% {
+        right: 125px;
+        top: 125px;
+    }
+}
+
+.section-title:hover{
+    color: variables.$teal;
+}

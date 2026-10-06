@@ -1,6 +1,6 @@
 @use '../../../../public/styles/main' as main;
 
-#aboutme{
+#aboutme {
     width: 100%;
     padding: 0px main.$outside-padding-1440;
     gap: 48px;
@@ -13,32 +13,31 @@
         padding: 0px main.$outside-padding-480;
     }
 
-    #aboutme_card{
+    #aboutme_card {
         gap: 48px;
 
         @media screen and (max-width: 768px) {
             flex-direction: column;
         }
 
-        #aboutme-text{
+        #aboutme-text {
             gap: 24px;
             font-size: 22px;
-            
-            #aboutme-description{
+
+            #aboutme-description {
                 line-height: 150%;
             }
 
-            #aboutme-info{
+            #aboutme-info {
                 gap: 16px;
-
             }
 
-            .aboutme-info{
+            .aboutme-info {
                 gap: 8px;
                 align-items: center;
             }
 
-            button{
+            button {
                 width: fit-content;
                 padding: 8px 16px;
                 border: 3px solid black;
@@ -46,25 +45,25 @@
                 color: black;
             }
 
-            button:hover{
+            button:hover {
                 color: black;
                 padding: 8px 32px;
                 font-weight: bold;
             }
 
-            a:hover{
+            a:hover {
                 text-decoration: none;
             }
         }
 
-        #aboutme-photo{
+        #aboutme-photo {
             @media screen and (max-width: 768px) {
                 width: 100%;
                 height: auto;
                 align-items: center;
-                }
+            }
 
-            #profile-photo{
+            #profile-photo {
                 height: 300px;
                 width: 300px;
                 border-radius: 50%;
@@ -73,13 +72,14 @@
     }
 }
 
-#from-aboutme-to-skills{
+#from-aboutme-to-skills {
     position: absolute;
     top: -50px;
     right: -20px;
 
     @media screen and (max-width: 768px) {
-            top: 50px;
-            right: 25%;
-        }
+        top: 50px;
+        right: 25%;
+    }
 }
+

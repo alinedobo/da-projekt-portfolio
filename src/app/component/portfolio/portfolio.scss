@@ -1,6 +1,6 @@
 @use '../../../../public/styles/main' as main;
 
-#portfolio{
+#portfolio {
     width: 100%;
     padding: 24px main.$outside-padding-1440;
     gap: 48px;
@@ -14,22 +14,22 @@
         padding: 24px main.$outside-padding-480 0px main.$outside-padding-480;
     }
 
-    #portfolio-header{
+    #portfolio-header {
         width: 100%;
         align-items: center;
         gap: 24px;
 
-        p{
+        p {
             width: 50%;
             text-align: center;
         }
     }
 
-    #projects-wrapper{
+    #projects-wrapper {
         width: 100%;
         gap: 96px;
 
-        .project-box{
+        .project-box {
             width: 100%;
             gap: 48px;
 
@@ -39,10 +39,10 @@
                 align-items: center;
                 gap: 16px;
             }
-    
-            .project-preview{
+
+            .project-preview {
                 max-width: 50%;
-                img{
+                img {
                     width: 100%;
                 }
 
@@ -53,10 +53,9 @@
                 @media screen and (max-width: 480px) {
                     max-width: 100%;
                 }
-
             }
-    
-            .project-details-wrapper{
+
+            .project-details-wrapper {
                 max-width: 50%;
                 gap: 24px;
 
@@ -67,50 +66,60 @@
                 @media screen and (max-width: 480px) {
                     max-width: 100%;
                 }
-    
-                .project-rank{
+
+                .project-rank {
                     align-self: flex-end;
                 }
-    
-                .project-details-text{
+
+                .project-details-text {
                     gap: 24px;
-    
-                    .project-name{
+
+                    .project-name {
                         align-items: flex-end;
                     }
-    
-                    #skills-listing{
+
+                    #skills-listing {
                         gap: 8px;
                     }
 
-                    .skills-listing{
+                    .skills-listing {
                         flex-wrap: wrap;
                         width: 100%;
                     }
                 }
-    
-                .github-link{
-                    border: 1px solid black;
-                    width: fit-content;
-                    padding: 8px 16px;
-                    border: 3px solid black;
+
+                .portfolio-buttons {
+                    display: flex;
+                    justify-content: space-evenly;
+                    width: 50%;
                     align-self: center;
+
+                    .portfolio-button {
+                        display: flex;
+                        justify-content: space-evenly;
+                        width: 50%;
+
+                        .github-link {
+                            width: 125px;
+                            padding: 8px 16px;
+                            border: 3px solid black;
+                            align-self: center;
+                        }
+                        .github-link:hover {
+                            width: 150px;
+                        }
+                    }
                 }
-    
             }
         }
-    
-        .row-reverse{
+
+        .row-reverse {
             flex-direction: row-reverse;
 
             @media screen and (max-width: 768px) {
                 flex-direction: column;
                 align-items: center;
             }
-
         }
-
     }
-
 }
-

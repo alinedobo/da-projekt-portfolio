@@ -24,9 +24,19 @@
                     </div>
                     <p class="overpass-16">{{item.description}}</p>
                 </div>
-                <button class="overpass-22 github-link">
-                    <a href={{item.githubUrl}} target="_blank" rel="noopener noreferrer">Github</a>
-                </button>
+                <div class="portfolio-buttons">
+                    <div class="portfolio-button">
+                        <button class="overpass-22 github-link">
+                            <a href={{item.projectUrl}} target="_blank" rel="noopener noreferrer">Live Test</a>
+                        </button>
+                    </div>
+                    <div class="portfolio-button">
+                        <button class="overpass-22 github-link">
+                            <a href={{item.githubUrl}} target="_blank" rel="noopener noreferrer">Github</a>
+                        </button>
+                    </div>
+                </div>
+
             </div>
         </div>
         }

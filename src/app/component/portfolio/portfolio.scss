@@ -43,7 +43,7 @@
             .project-preview {
                 max-width: 50%;
                 filter: grayscale(1);
-                z-index: 2;
+                transition: filter 500ms ease;
 
                 .project-image {
                     width: 100%;
@@ -57,20 +57,15 @@
                     max-width: 100%;
                 }
             }
-            .project-preview:hover {
-                filter: grayscale(0);
-            }
 
             .black-frame {
                 position: absolute;
                 border: 2px solid black;
-                width: calc(50% - 30px);
+                width: calc(50% - 40px);
                 height: 100%;
                 opacity: 0%;
-            }
-
-            .black-frame:hover {
-                opacity: 100%;
+                z-index: 2;
+                transition: opacity 400ms ease;
             }
 
             .frame-normal {
@@ -128,17 +123,23 @@
                         width: 50%;
 
                         .github-link {
-                            width: 125px;
+                            width: 90%;
                             padding: 8px 16px;
                             border: 3px solid black;
                             align-self: center;
                         }
                         .github-link:hover {
-                            width: 150px;
+                            width: 100%;
                         }
                     }
                 }
             }
+        }
+        .project-box:hover .project-preview{
+            filter: grayscale(0);
+        }
+        .project-box:hover .black-frame{
+            opacity: 100%;
         }
 
         .row-reverse {

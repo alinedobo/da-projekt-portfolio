@@ -81,12 +81,29 @@ a:hover {
     animation-iteration-count: infinite;
 }
 
+.arrow-down-right {
+    position: relative;
+    animation: arrowDownRightAnimation 2s;
+    animation-iteration-count: infinite;
+}
+
 @keyframes arrowDownLeftAnimation {
     0% {
         right: 0px;
     }
     100% {
         right: 125px;
+        top: 125px;
+    }
+}
+
+@keyframes arrowDownRightAnimation {
+    0% {
+        left: -50px;
+        top: -50px;
+    }
+    100% {
+        left: 125px;
         top: 125px;
     }
 }

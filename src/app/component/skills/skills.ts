@@ -9,7 +9,7 @@ import { TranslatePipe, TranslateDirective } from '@ngx-translate/core';
 })
 export class Skills {
     rowOne = new Map([
-        ['Agular', 'assets/icons/Logo_angular.png'],
+        ['Angular', 'assets/icons/Logo_angular.png'],
         ['TypeScript', 'assets/icons/Logo_typescript.png'],
         ['JavaScript', 'assets/icons/Logo_javascript.png'],
         ['HTML', 'assets/icons/Logo_html.png'],

@@ -14,7 +14,7 @@
                 </a>
             </div>
             <div class="black-frame" [class.frame-normal]="!isOdd" [class.frame-reverse]="isOdd"></div>
-            <div class="project-details-wrapper display-flex-column">
+            <div class="project-details-wrapper display-flex-column" [class.wrapper-normal]="!isOdd" [class.wrapper-reverse]="isOdd">
                 <h3 class="project-rank">{{index+1}}/{{count}}</h3>
                 <div class="project-details-text display-flex-column">
                     <h3 class="project-name">{{item.name}}</h3>
@@ -37,7 +37,6 @@
                         </button>
                     </div>
                 </div>
-
             </div>
         </div>
         }

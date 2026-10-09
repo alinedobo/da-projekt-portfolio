@@ -64,15 +64,12 @@
                 width: calc(50% - 40px);
                 height: 100%;
                 opacity: 0%;
-                z-index: 2;
                 transition: opacity 400ms ease;
             }
-
             .frame-normal {
                 left: 15px;
                 top: 15px;
             }
-
             .frame-reverse {
                 right: 15px;
                 top: 15px;
@@ -81,6 +78,7 @@
             .project-details-wrapper {
                 max-width: 50%;
                 gap: 24px;
+                opacity: 0%;
 
                 @media screen and (max-width: 768px) {
                     max-width: 80%;
@@ -135,11 +133,62 @@
                 }
             }
         }
-        .project-box:hover .project-preview{
+        .project-box:hover .project-preview {
             filter: grayscale(0);
         }
-        .project-box:hover .black-frame{
+        .project-box:hover .black-frame {
             opacity: 100%;
+        }
+
+        .project-box:hover .wrapper-normal {
+            animation: slideOut 0.5s ease-out both;
+            @keyframes slideOut {
+                0% {
+                    opacity: 0%;
+                    transform: translateX(-100%);
+                }
+                25% {
+                    transform: translateX(-75%);
+                    opacity: 0;
+                }
+                50% {
+                    transform: translateX(-50%);
+                    opacity: 0%;
+                }
+                75% {
+                    transform: translateX(-25%);
+                    opacity: 10%;
+                }
+                100% {
+                    transform: translateX(0%);
+                    opacity: 100%;
+                }
+            }
+        }
+        .project-box:hover .wrapper-reverse {
+            animation: slideIn 0.5s ease-out both;
+            @keyframes slideIn {
+                0% {
+                    transform: translateX(100%);
+                    opacity: 0;
+                }
+                25% {
+                    transform: translateX(75%);
+                    opacity: 0;
+                }
+                50% {
+                    transform: translateX(50%);
+                    opacity: 0%;
+                }
+                75% {
+                    transform: translateX(25%);
+                    opacity: 10%;
+                }
+                100% {
+                    transform: translateX(0%);
+                    opacity: 100%;
+                }
+            }
         }
 
         .row-reverse {

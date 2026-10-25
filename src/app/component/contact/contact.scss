@@ -58,6 +58,7 @@
 
                 .checkbox-label {
                     gap: 4px;
+                    flex-wrap: wrap;
 
                     #privacy-policy {
                         padding: 0px 3px;
@@ -116,6 +117,10 @@
         position: absolute;
         bottom: 0;
         right: main.$outside-padding-1440;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
     }
 
     .arrow {

@@ -135,4 +135,8 @@
     position: absolute;
     top: 0px;
     left: 25%;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }

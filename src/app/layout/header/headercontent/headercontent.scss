@@ -129,6 +129,40 @@
             bottom: 0;
             left: 0;
         }
+
+        .line {
+            position: absolute;
+            bottom: 0;
+            height: 2px;
+            width: 10%;
+            background-color: black;
+            left: 0;
+        }
+    }
+
+    .navigation-item-box:hover .hidden-box-corner {
+        display: none;
+    }
+
+    .navigation-item-box:hover .line {
+        position: absolute;
+        bottom: 0;
+        height: 4px;
+        background: main.$teal;
+        animation: movingLine 1s linear forwards;
+    }
+    @keyframes movingLine {
+        0% {
+            left: 0;
+        }
+
+        50% {
+            left: 50%;
+        }
+
+        100% {
+            left: 90%;
+        }
     }
 }
 

@@ -47,7 +47,11 @@
             </div>
             <div class="display-flex-row" id="checkbox-div">
                 <input type="checkbox" id="checkbox" name="checkbox" value="" (click)="toggleCheckbox()" formControlName="privacyCheckbox">
-                <label for="checkbox">{{'contact.privacy-read' | translate}} <a routerLink="/privacy" id="privacy-policy">{{'contact.privacy-policy' | translate}}</a> {{'contact.privacy-agree' | translate}}</label><br>
+                <label class="display-flex-row checkbox-label" for="checkbox">{{'contact.privacy-read' | translate}} 
+                    <div id="privacy-policy">
+                        <a routerLink="/privacy">{{'contact.privacy-policy' | translate}}</a> 
+                    </div>
+                    {{'contact.privacy-agree' | translate}}</label><br>
             </div>
             @if(contactform.valid && isChecked){
                 <button type="submit" (click)="formSubmit()">{{'contact.send' | translate}}</button>
@@ -57,5 +61,10 @@
             }
             <p id="thank-you" [class]="classList">{{'contact.confirmation' | translate}}</p>
         </form>
+    </div>
+    <div class="arrow-up">
+        <a routerLink="/" aria-label="AD - Home">
+            <img class="arrow" src="assets/icons/arrow-up-white.svg" alt="arrow up">
+        </a>
     </div>
 </section>

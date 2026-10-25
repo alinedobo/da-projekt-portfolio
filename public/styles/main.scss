@@ -71,10 +71,22 @@ a:hover {
     }
 }
 .sm-icon:hover {
-    transform: scale(1.5);
-    transform: translate(0px, -25px);
-    transition: all 0.25s ease-in;
+    animation: moveUp 0.5s linear forwards;
 }
+
+@keyframes moveUp {
+        0% {
+            bottom: 0;
+        }
+
+        50% {
+            bottom: 25%;
+        }
+
+        100% {
+            bottom: 50%;
+        }
+    }
 
 .arrow-down-left {
     position: relative;

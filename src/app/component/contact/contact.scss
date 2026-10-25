@@ -56,20 +56,18 @@
             #checkbox-div {
                 gap: 8px;
 
-                .checkbox-label{
+                .checkbox-label {
                     gap: 4px;
 
                     #privacy-policy {
                         padding: 0px 3px;
                         color: main.$teal;
                     }
-                    #privacy-policy:hover{
+                    #privacy-policy:hover {
                         padding: 0px 0px;
                         font-weight: bolder;
                     }
-
                 }
-
             }
             .form-input-box {
                 width: 100%;
@@ -86,6 +84,11 @@
                     width: 100%;
                     height: 3rem;
                 }
+
+                .input-field:hover {
+                    cursor: pointer;
+                }
+
                 #text {
                     height: 10rem;
                 }

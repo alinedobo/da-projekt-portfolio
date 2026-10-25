@@ -6,8 +6,7 @@
     <div class="display-flex-row" id="reference-wrapper">
         @for (item of 'references.quotes' | translate; track item.name) {
             <div class="reference-container display-flex-column">
-                <div>
-                    <img src="assets/icons/icon_quote.svg" alt="">
+                <div class="quote-image">
                 </div>
                 <div class=" display-flex-column reference-author-detail">
                     <p class="reference-author-name overpass-22">{{item.name}}</p>

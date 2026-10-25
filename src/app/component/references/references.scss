@@ -1,7 +1,6 @@
 @use '../../../../public/styles/main' as main;
 
-
-#references{
+#references {
     width: 100%;
     padding: 100px main.$outside-padding-1440;
     gap: 48px;
@@ -15,18 +14,18 @@
         padding: 100px main.$outside-padding-480 0px main.$outside-padding-480;
     }
 
-    #references-header{
+    #references-header {
         width: 100%;
         align-items: center;
         gap: 24px;
 
-        p{
+        p {
             width: 50%;
             text-align: center;
         }
     }
 
-    #reference-wrapper{
+    #reference-wrapper {
         justify-content: space-between;
 
         @media screen and (max-width: 768px) {
@@ -35,7 +34,7 @@
             gap: 32px;
         }
 
-        .reference-container{
+        .reference-container {
             align-items: center;
             border: 4px solid black;
             width: 30%;
@@ -52,30 +51,44 @@
             }
 
             @media screen and (max-width: 768px) {
-            width: 80%;
+                width: 80%;
             }
 
             @media screen and (max-width: 480px) {
-            width: 100%;
-            }
-    
-            img{
-                height: 40px;
-                width: 40px;
-            }
-    
-            .reference-author-detail{
-                gap: 8px
-                
+                width: 100%;
             }
 
-            .reference-text{
+            .quote-image {
+                height: 40px;
+                width: 40px;
+                background: url(../../../../public/assets/icons/icon_quote-black.svg);
+                background-repeat: no-repeat;
+                background-position: top center;
+                background-size: contain;
+            }
+
+            .reference-author-detail {
+                gap: 8px;
+            }
+
+            .reference-text {
                 font-style: italic;
             }
         }
+
+        .reference-container:hover {
+            border: 4px solid main.$teal;
+        }
+
+        .reference-container:hover .quote-image {
+            background: url(../../../../public/assets/icons/icon_quote-teal.svg);
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: cover;
+        }
     }
 }
-#from-references-to-contact{
+#from-references-to-contact {
     position: absolute;
     top: -100px;
     right: -40px;
@@ -84,5 +97,4 @@
         top: 10%;
         right: 25%;
     }
-    
 }

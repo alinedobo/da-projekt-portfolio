@@ -112,6 +112,23 @@
     align-items: center;
     justify-content: center;
     gap: 32px;
+
+    .line {
+        position: absolute;
+        bottom: 0;
+        height: 2px;
+        width: 10%;
+        background-color: white;
+        left: 0;
+    }
+
+    .highlight:hover .line {
+        position: absolute;
+        bottom: 0;
+        height: 2px;
+        background: main.$teal;
+        animation: movingLine 1s linear forwards;
+    }
 }
 
 #from-skills-to-portfolio {

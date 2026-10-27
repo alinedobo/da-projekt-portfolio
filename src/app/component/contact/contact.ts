@@ -12,7 +12,7 @@ import { TranslatePipe, TranslateDirective } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-contact',
-    imports: [ReactiveFormsModule, RouterLink, TranslatePipe, TranslateDirective],
+    imports: [ReactiveFormsModule, RouterLink, TranslatePipe],
     templateUrl: './contact.html',
     styleUrl: './contact.scss',
 })
@@ -21,8 +21,8 @@ export class Contact {
     isChecked = false;
     isDisabled = true;
     classList = 'overpass-16 white display-none';
-    crud = inject(CrudService);
-    table = 'frontend';
+/*     crud = inject(CrudService);
+    table = 'frontend'; */
 
     contactform = this.fb.group({
         name: ['', [Validators.required, Validators.minLength(4)]],
@@ -37,7 +37,7 @@ export class Contact {
 
     formSubmit() {
         console.log(this.contactform.value);
-        this.createRequest();
+        /* this.createRequest(); */
         this.formReset();
         this.formUntouch();
         this.classList = 'overpass-16 white';
@@ -55,12 +55,12 @@ export class Contact {
         this.isChecked = !this.isChecked;
     }
 
-    createRequest() {
+    /* createRequest() {
         const newRequest = {
             name: this.contactform.value.name!,
             email: this.contactform.value.email!,
             message: this.contactform.value.message!,
         };
         this.crud.saveContactRequest(newRequest);
-    }
+    } */
 }
